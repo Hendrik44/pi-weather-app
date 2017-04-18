@@ -8,13 +8,13 @@ This project was a part of my bachelor thesis and after some rewrite/refactoring
 * Xcode 8.3 + Swift 3.1
 
 # Screenhots tvOS
-![tvOS-Screen1](/images/screen-tvOS1.png?raw=true "tvOS-Screen1")
-![tvOS-Screen2](/images/screen-tvOS2.png?raw=true "tvOS-Screen2")
-![tvOS-Screen2](/images/screen-tvOS3.png?raw=true "tvOS-Screen3")
+![tvOS-Screen1](/images/screen-tvOS1.png?raw=true)
+![tvOS-Screen2](/images/screen-tvOS2.png?raw=true)
+![tvOS-Screen2](/images/screen-tvOS3.png?raw=true)
 
 # Screenshots iOS
-![screen-ipad1](/images/screen-ipad1.png?raw=true "screen-ipad2")
-![screen-ipad2](/images/screen-ipad2.png?raw=true "screen-ipad2")
+![screen-ipad1](/images/screen-ipad1.png?raw=true)
+![screen-ipad2](/images/screen-ipad2.png?raw=true)
 
 # Screenshot watchOS
 ![screen-watchOS](/images/screen-watchOS.png?raw=true "screen-watchOS")
