@@ -1,0 +1,1246 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D0311971D946A5E00034E39 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0311961D946A5E00034E39 /* AppSettings.swift */; };
+		4D0311981D946AD200034E39 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0311961D946A5E00034E39 /* AppSettings.swift */; };
+		4D2BB2A51DA7035000F90DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14876A21D9337E300A05531 /* Main.storyboard */; };
+		4D2BB2A61DA7035500F90DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14876A51D9337E300A05531 /* Assets.xcassets */; };
+		4D2BB2A71DA7035900F90DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14876A71D9337E300A05531 /* LaunchScreen.storyboard */; };
+		4D41306E1D944A1000D3B715 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D41306D1D944A1000D3B715 /* CircleView.swift */; };
+		4D41306F1D944A1000D3B715 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D41306D1D944A1000D3B715 /* CircleView.swift */; };
+		4D4130711D94519D00D3B715 /* CircleViewTv.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4130701D94519D00D3B715 /* CircleViewTv.xib */; };
+		4D4130731D94599D00D3B715 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4130721D94599D00D3B715 /* APIController.swift */; };
+		4D4130741D94599D00D3B715 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4130721D94599D00D3B715 /* APIController.swift */; };
+		4D4863911E9D8D0100D0E5DF /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4863901E9D8D0100D0E5DF /* LicenseViewController.swift */; };
+		4D4863921E9D8D0100D0E5DF /* LicenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4863901E9D8D0100D0E5DF /* LicenseViewController.swift */; };
+		4D4863941E9D8D3E00D0E5DF /* licenses in Resources */ = {isa = PBXBuildFile; fileRef = 4D4863931E9D8D3E00D0E5DF /* licenses */; };
+		4D4863951E9D8D3E00D0E5DF /* licenses in Resources */ = {isa = PBXBuildFile; fileRef = 4D4863931E9D8D3E00D0E5DF /* licenses */; };
+		4D981D061D942FFB00C38ECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D981D051D942FFB00C38ECF /* AppDelegate.swift */; };
+		4D981D081D942FFB00C38ECF /* LiveDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D981D071D942FFB00C38ECF /* LiveDataViewController.swift */; };
+		4D981D0D1D942FFB00C38ECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D981D0B1D942FFB00C38ECF /* Main.storyboard */; };
+		4D981D0F1D942FFB00C38ECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D981D0E1D942FFB00C38ECF /* Assets.xcassets */; };
+		4DE7F9771E8855FF00D9D7C2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE7F9761E8855FF00D9D7C2 /* API.swift */; };
+		4DE7F9781E8855FF00D9D7C2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE7F9761E8855FF00D9D7C2 /* API.swift */; };
+		4DE7F9791E8855FF00D9D7C2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE7F9761E8855FF00D9D7C2 /* API.swift */; };
+		4DE7F97B1E8855FF00D9D7C2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE7F9761E8855FF00D9D7C2 /* API.swift */; };
+		4DE7F97D1E8856AC00D9D7C2 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE7F97C1E8856AC00D9D7C2 /* Sensor.swift */; };
+		4DE7F97E1E8856AC00D9D7C2 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE7F97C1E8856AC00D9D7C2 /* Sensor.swift */; };
+		4DE7F97F1E8856AC00D9D7C2 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE7F97C1E8856AC00D9D7C2 /* Sensor.swift */; };
+		4DE7F9811E8856AC00D9D7C2 /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE7F97C1E8856AC00D9D7C2 /* Sensor.swift */; };
+		4DED4D4F1E86AEDD00929BBA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DED4D4E1E86AEDD00929BBA /* UIColorExtension.swift */; };
+		4DED4D501E86AEDD00929BBA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DED4D4E1E86AEDD00929BBA /* UIColorExtension.swift */; };
+		4DED4D511E86AEDD00929BBA /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DED4D4E1E86AEDD00929BBA /* UIColorExtension.swift */; };
+		4DED4D561E86B13800929BBA /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DED4D551E86B13800929BBA /* ChartViewController.swift */; };
+		4DED4D571E86B13800929BBA /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DED4D551E86B13800929BBA /* ChartViewController.swift */; };
+		4DED4D5F1E86B36D00929BBA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF394F71DA9BBFF00819632 /* NotificationCenter.framework */; };
+		4DED4D621E86B36D00929BBA /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DED4D611E86B36D00929BBA /* TodayViewController.swift */; };
+		4DED4D651E86B36D00929BBA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DED4D631E86B36D00929BBA /* MainInterface.storyboard */; };
+		4DED4D691E86B36D00929BBA /* Pi-Weahter-TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DED4D5E1E86B36C00929BBA /* Pi-Weahter-TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DF394B61DA9ADBB00819632 /* CircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF394B51DA9ADBB00819632 /* CircleView.xib */; };
+		4DF394B81DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF394B71DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift */; };
+		4DF394B91DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF394B71DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift */; };
+		4DF394CC1DA9BB7400819632 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF394CA1DA9BB7400819632 /* Interface.storyboard */; };
+		4DF394CE1DA9BB7400819632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF394CD1DA9BB7400819632 /* Assets.xcassets */; };
+		4DF394D51DA9BB7400819632 /* Pi-WeatherWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DF394D41DA9BB7400819632 /* Pi-WeatherWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		4DF394DC1DA9BB7400819632 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF394DB1DA9BB7400819632 /* InterfaceController.swift */; };
+		4DF394DE1DA9BB7400819632 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF394DD1DA9BB7400819632 /* ExtensionDelegate.swift */; };
+		4DF394E01DA9BB7400819632 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF394DF1DA9BB7400819632 /* NotificationController.swift */; };
+		4DF394E21DA9BB7400819632 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF394E11DA9BB7400819632 /* ComplicationController.swift */; };
+		4DF394E41DA9BB7400819632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF394E31DA9BB7400819632 /* Assets.xcassets */; };
+		4DF394E81DA9BB7400819632 /* Pi-WeatherWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 4DF394C81DA9BB7400819632 /* Pi-WeatherWatch.app */; };
+		4DF4B72E1E945AA600996AF2 /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF4B72D1E945AA600996AF2 /* FontAwesome.framework */; };
+		B104D3BF1E952E630025BA9B /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B104D3BE1E952E630025BA9B /* FontAwesome.framework */; };
+		B11D647D1DB95B93003C9F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF394E31DA9BB7400819632 /* Assets.xcassets */; };
+		B11D64861DB97868003C9F7C /* LiveDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D981D071D942FFB00C38ECF /* LiveDataViewController.swift */; };
+		B148769D1D9337E300A05531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B148769C1D9337E300A05531 /* AppDelegate.swift */; };
+		B16357A21E8C7243002751F4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF394F71DA9BBFF00819632 /* NotificationCenter.framework */; };
+		B17738531E8D910100EC05BD /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17738521E8D910100EC05BD /* Charts.framework */; };
+		B17738541E8D910100EC05BD /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B17738521E8D910100EC05BD /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B17738571E8D915F00EC05BD /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17738561E8D915F00EC05BD /* FontAwesome.framework */; };
+		B17738581E8D915F00EC05BD /* FontAwesome.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B17738561E8D915F00EC05BD /* FontAwesome.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B177385A1E8D9B6E00EC05BD /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17738591E8D9B6E00EC05BD /* Charts.framework */; };
+		B177385B1E8D9B6E00EC05BD /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B17738591E8D9B6E00EC05BD /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B198F2A41EA181FC00340E06 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B198F2A31EA181FC00340E06 /* StringExtension.swift */; };
+		B198F2A51EA181FC00340E06 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B198F2A31EA181FC00340E06 /* StringExtension.swift */; };
+		B1C6A7DA1E8EC522003BCBAD /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4130721D94599D00D3B715 /* APIController.swift */; };
+		B1C6A7DB1E8EC61D003BCBAD /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0311961D946A5E00034E39 /* AppSettings.swift */; };
+		B1C6A7E21E8EE0D0003BCBAD /* KVNProgressKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C6A7E11E8EE0D0003BCBAD /* KVNProgressKit.framework */; };
+		B1C6A7E61E8EEE08003BCBAD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C6A7E51E8EEE08003BCBAD /* SettingsViewController.swift */; };
+		B1C6A7E71E8EEE08003BCBAD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C6A7E51E8EEE08003BCBAD /* SettingsViewController.swift */; };
+		B1EF4B0C1DB93AA200E3A433 /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4130721D94599D00D3B715 /* APIController.swift */; };
+		B1EF4B111DB93B7C00E3A433 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0311961D946A5E00034E39 /* AppSettings.swift */; };
+		B1EF4B121DB950C000E3A433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF394CD1DA9BB7400819632 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DED4D671E86B36D00929BBA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B14876911D9337E300A05531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DED4D5D1E86B36C00929BBA;
+			remoteInfo = "Pi-Weahter-TodayWidget";
+		};
+		4DF394D61DA9BB7400819632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B14876911D9337E300A05531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF394D31DA9BB7400819632;
+			remoteInfo = "Pi-WeatherWatch Extension";
+		};
+		4DF394E61DA9BB7400819632 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B14876911D9337E300A05531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DF394C71DA9BB7400819632;
+			remoteInfo = "Pi-WeatherWatch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DF394EC1DA9BB7400819632 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4DF394D51DA9BB7400819632 /* Pi-WeatherWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF394F01DA9BB7400819632 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				4DF394E81DA9BB7400819632 /* Pi-WeatherWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF395061DA9BBFF00819632 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4DED4D691E86B36D00929BBA /* Pi-Weahter-TodayWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B17738551E8D910100EC05BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B17738541E8D910100EC05BD /* Charts.framework in Embed Frameworks */,
+				B17738581E8D915F00EC05BD /* FontAwesome.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B177385C1E8D9B6E00EC05BD /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B177385B1E8D9B6E00EC05BD /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4D0311961D946A5E00034E39 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		4D41306D1D944A1000D3B715 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleView.swift; path = Views/CircleView.swift; sourceTree = "<group>"; };
+		4D4130701D94519D00D3B715 /* CircleViewTv.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CircleViewTv.xib; path = Views/CircleViewTv.xib; sourceTree = "<group>"; };
+		4D4130721D94599D00D3B715 /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIController.swift; path = Controller/APIController.swift; sourceTree = "<group>"; };
+		4D4863901E9D8D0100D0E5DF /* LicenseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LicenseViewController.swift; path = ViewController/LicenseViewController.swift; sourceTree = "<group>"; };
+		4D4863931E9D8D3E00D0E5DF /* licenses */ = {isa = PBXFileReference; lastKnownFileType = folder; path = licenses; sourceTree = "<group>"; };
+		4D4863961E9D8F9400D0E5DF /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		4D981D031D942FFA00C38ECF /* Pi-WeatherTv.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pi-WeatherTv.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D981D051D942FFB00C38ECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4D981D071D942FFB00C38ECF /* LiveDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LiveDataViewController.swift; path = "Pi-WeatherTv/LiveDataViewController.swift"; sourceTree = "<group>"; };
+		4D981D0C1D942FFB00C38ECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D981D0E1D942FFB00C38ECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D981D101D942FFB00C38ECF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE7F9761E8855FF00D9D7C2 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = DataModel/API.swift; sourceTree = "<group>"; };
+		4DE7F97C1E8856AC00D9D7C2 /* Sensor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Sensor.swift; path = DataModel/Sensor.swift; sourceTree = "<group>"; };
+		4DED4D4D1E86AEDD00929BBA /* Pi-WeatherWatch-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pi-WeatherWatch-Bridging-Header.h"; sourceTree = "<group>"; };
+		4DED4D4E1E86AEDD00929BBA /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtension.swift; path = ClassExtensions/UIColorExtension.swift; sourceTree = "<group>"; };
+		4DED4D551E86B13800929BBA /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChartViewController.swift; path = ViewController/ChartViewController.swift; sourceTree = "<group>"; };
+		4DED4D5E1E86B36C00929BBA /* Pi-Weahter-TodayWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pi-Weahter-TodayWidget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DED4D611E86B36D00929BBA /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4DED4D641E86B36D00929BBA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		4DED4D661E86B36D00929BBA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF394B51DA9ADBB00819632 /* CircleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CircleView.xib; path = Views/CircleView.xib; sourceTree = "<group>"; };
+		4DF394B71DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LabelWithAdaptiveTextHeight.swift; path = Views/LabelWithAdaptiveTextHeight.swift; sourceTree = "<group>"; };
+		4DF394C81DA9BB7400819632 /* Pi-WeatherWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pi-WeatherWatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF394CB1DA9BB7400819632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		4DF394CD1DA9BB7400819632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DF394CF1DA9BB7400819632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF394D41DA9BB7400819632 /* Pi-WeatherWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Pi-WeatherWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DF394DA1DA9BB7400819632 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		4DF394DB1DA9BB7400819632 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		4DF394DD1DA9BB7400819632 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		4DF394DF1DA9BB7400819632 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		4DF394E11DA9BB7400819632 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		4DF394E31DA9BB7400819632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DF394E51DA9BB7400819632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DF394F71DA9BBFF00819632 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4DF4B72D1E945AA600996AF2 /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/tvOS/FontAwesome.framework; sourceTree = SOURCE_ROOT; };
+		B104D3BE1E952E630025BA9B /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/watchOS/FontAwesome.framework; sourceTree = SOURCE_ROOT; };
+		B11D647F1DB9631F003C9F7C /* Pi-Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pi-Weather.entitlements"; sourceTree = "<group>"; };
+		B14876991D9337E300A05531 /* Pi-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pi-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B148769C1D9337E300A05531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B14876A31D9337E300A05531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B14876A51D9337E300A05531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B14876A81D9337E300A05531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B14876AA1D9337E300A05531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B17738521E8D910100EC05BD /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = ../Carthage/Build/iOS/Charts.framework; sourceTree = "<group>"; };
+		B17738561E8D915F00EC05BD /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = ../Carthage/Build/iOS/FontAwesome.framework; sourceTree = "<group>"; };
+		B17738591E8D9B6E00EC05BD /* Charts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Charts.framework; path = ../Carthage/Build/tvOS/Charts.framework; sourceTree = "<group>"; };
+		B198F2A31EA181FC00340E06 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtension.swift; path = ClassExtensions/StringExtension.swift; sourceTree = "<group>"; };
+		B1C6A7E11E8EE0D0003BCBAD /* KVNProgressKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KVNProgressKit.framework; path = Carthage/Build/iOS/KVNProgressKit.framework; sourceTree = SOURCE_ROOT; };
+		B1C6A7E31E8EE6A5003BCBAD /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = SOURCE_ROOT; };
+		B1C6A7E51E8EEE08003BCBAD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ViewController/SettingsViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D981D001D942FFA00C38ECF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B177385A1E8D9B6E00EC05BD /* Charts.framework in Frameworks */,
+				4DF4B72E1E945AA600996AF2 /* FontAwesome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DED4D5B1E86B36C00929BBA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DED4D5F1E86B36D00929BBA /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF394D11DA9BB7400819632 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B104D3BF1E952E630025BA9B /* FontAwesome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14876961D9337E300A05531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17738531E8D910100EC05BD /* Charts.framework in Frameworks */,
+				B17738571E8D915F00EC05BD /* FontAwesome.framework in Frameworks */,
+				B1C6A7E21E8EE0D0003BCBAD /* KVNProgressKit.framework in Frameworks */,
+				B16357A21E8C7243002751F4 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D0311951D946A0F00034E39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DF4B72D1E945AA600996AF2 /* FontAwesome.framework */,
+				B17738591E8D9B6E00EC05BD /* Charts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D0D2ECE1DA70468007F6264 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1C6A7E31E8EE6A5003BCBAD /* FontAwesome.framework */,
+				B1C6A7E11E8EE0D0003BCBAD /* KVNProgressKit.framework */,
+				B17738561E8D915F00EC05BD /* FontAwesome.framework */,
+				B17738521E8D910100EC05BD /* Charts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D4130751D9459A100D3B715 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4D4130721D94599D00D3B715 /* APIController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		4D981D041D942FFB00C38ECF /* Pi-WeatherTv */ = {
+			isa = PBXGroup;
+			children = (
+				4D0311951D946A0F00034E39 /* Frameworks */,
+				4D981D051D942FFB00C38ECF /* AppDelegate.swift */,
+				4D981D0B1D942FFB00C38ECF /* Main.storyboard */,
+				4D981D0E1D942FFB00C38ECF /* Assets.xcassets */,
+				4D981D101D942FFB00C38ECF /* Info.plist */,
+			);
+			path = "Pi-WeatherTv";
+			sourceTree = "<group>";
+		};
+		4D981D141D9431ED00C38ECF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4D41306D1D944A1000D3B715 /* CircleView.swift */,
+				4D4130701D94519D00D3B715 /* CircleViewTv.xib */,
+				4DF394B51DA9ADBB00819632 /* CircleView.xib */,
+				4DF394B71DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		4DE7F9751E8855C600D9D7C2 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DE7F9761E8855FF00D9D7C2 /* API.swift */,
+				4DE7F97C1E8856AC00D9D7C2 /* Sensor.swift */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		4DED4D531E86AF1100929BBA /* ClassExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				4DED4D4E1E86AEDD00929BBA /* UIColorExtension.swift */,
+				B198F2A31EA181FC00340E06 /* StringExtension.swift */,
+			);
+			name = ClassExtensions;
+			sourceTree = "<group>";
+		};
+		4DED4D541E86B0D800929BBA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4D981D071D942FFB00C38ECF /* LiveDataViewController.swift */,
+				4DED4D551E86B13800929BBA /* ChartViewController.swift */,
+				B1C6A7E51E8EEE08003BCBAD /* SettingsViewController.swift */,
+				4D4863901E9D8D0100D0E5DF /* LicenseViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		4DED4D601E86B36D00929BBA /* Pi-Weahter-TodayWidget */ = {
+			isa = PBXGroup;
+			children = (
+				4DED4D611E86B36D00929BBA /* TodayViewController.swift */,
+				4DED4D631E86B36D00929BBA /* MainInterface.storyboard */,
+				4DED4D661E86B36D00929BBA /* Info.plist */,
+			);
+			path = "Pi-Weahter-TodayWidget";
+			sourceTree = "<group>";
+		};
+		4DF394C91DA9BB7400819632 /* Pi-WeatherWatch */ = {
+			isa = PBXGroup;
+			children = (
+				4DF394CA1DA9BB7400819632 /* Interface.storyboard */,
+				4DF394CD1DA9BB7400819632 /* Assets.xcassets */,
+				4DF394CF1DA9BB7400819632 /* Info.plist */,
+			);
+			path = "Pi-WeatherWatch";
+			sourceTree = "<group>";
+		};
+		4DF394D81DA9BB7400819632 /* Pi-WeatherWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B11D647E1DB95F0E003C9F7C /* Frameworks */,
+				4DF394DB1DA9BB7400819632 /* InterfaceController.swift */,
+				4DF394DD1DA9BB7400819632 /* ExtensionDelegate.swift */,
+				4DF394DF1DA9BB7400819632 /* NotificationController.swift */,
+				4DF394E11DA9BB7400819632 /* ComplicationController.swift */,
+				4DF394E31DA9BB7400819632 /* Assets.xcassets */,
+				4DF394E51DA9BB7400819632 /* Info.plist */,
+				4DF394D91DA9BB7400819632 /* Supporting Files */,
+			);
+			path = "Pi-WeatherWatch Extension";
+			sourceTree = "<group>";
+		};
+		4DF394D91DA9BB7400819632 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DF394DA1DA9BB7400819632 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DF394F61DA9BBFF00819632 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D4863961E9D8F9400D0E5DF /* WebKit.framework */,
+				4DF394F71DA9BBFF00819632 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B11D647E1DB95F0E003C9F7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B104D3BE1E952E630025BA9B /* FontAwesome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B14876901D9337E300A05531 = {
+			isa = PBXGroup;
+			children = (
+				4D4863931E9D8D3E00D0E5DF /* licenses */,
+				4DE7F9751E8855C600D9D7C2 /* DataModel */,
+				4D4130751D9459A100D3B715 /* Controller */,
+				4DED4D541E86B0D800929BBA /* ViewController */,
+				4DED4D531E86AF1100929BBA /* ClassExtensions */,
+				4D0311961D946A5E00034E39 /* AppSettings.swift */,
+				4D981D141D9431ED00C38ECF /* Views */,
+				B148769B1D9337E300A05531 /* Pi-Weather */,
+				4D981D041D942FFB00C38ECF /* Pi-WeatherTv */,
+				4DF394C91DA9BB7400819632 /* Pi-WeatherWatch */,
+				4DF394D81DA9BB7400819632 /* Pi-WeatherWatch Extension */,
+				4DED4D601E86B36D00929BBA /* Pi-Weahter-TodayWidget */,
+				4DF394F61DA9BBFF00819632 /* Frameworks */,
+				B148769A1D9337E300A05531 /* Products */,
+				4DED4D4D1E86AEDD00929BBA /* Pi-WeatherWatch-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		B148769A1D9337E300A05531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B14876991D9337E300A05531 /* Pi-Weather.app */,
+				4D981D031D942FFA00C38ECF /* Pi-WeatherTv.app */,
+				4DF394C81DA9BB7400819632 /* Pi-WeatherWatch.app */,
+				4DF394D41DA9BB7400819632 /* Pi-WeatherWatch Extension.appex */,
+				4DED4D5E1E86B36C00929BBA /* Pi-Weahter-TodayWidget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B148769B1D9337E300A05531 /* Pi-Weather */ = {
+			isa = PBXGroup;
+			children = (
+				B11D647F1DB9631F003C9F7C /* Pi-Weather.entitlements */,
+				4D0D2ECE1DA70468007F6264 /* Frameworks */,
+				B148769C1D9337E300A05531 /* AppDelegate.swift */,
+				B14876A21D9337E300A05531 /* Main.storyboard */,
+				B14876A51D9337E300A05531 /* Assets.xcassets */,
+				B14876A71D9337E300A05531 /* LaunchScreen.storyboard */,
+				B14876AA1D9337E300A05531 /* Info.plist */,
+			);
+			path = "Pi-Weather";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D981D021D942FFA00C38ECF /* Pi-WeatherTv */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D981D131D942FFB00C38ECF /* Build configuration list for PBXNativeTarget "Pi-WeatherTv" */;
+			buildPhases = (
+				4D981CFF1D942FFA00C38ECF /* Sources */,
+				4D48638F1E9D833400D0E5DF /* Linting */,
+				4D981D001D942FFA00C38ECF /* Frameworks */,
+				4D981D011D942FFA00C38ECF /* Resources */,
+				B177385C1E8D9B6E00EC05BD /* Embed Frameworks */,
+				4DF4B72C1E945A7000996AF2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pi-WeatherTv";
+			productName = "Pi-WeatherTv";
+			productReference = 4D981D031D942FFA00C38ECF /* Pi-WeatherTv.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DED4D5D1E86B36C00929BBA /* Pi-Weahter-TodayWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DED4D6A1E86B36D00929BBA /* Build configuration list for PBXNativeTarget "Pi-Weahter-TodayWidget" */;
+			buildPhases = (
+				4DED4D5A1E86B36C00929BBA /* Sources */,
+				4DED4D5B1E86B36C00929BBA /* Frameworks */,
+				4DED4D5C1E86B36C00929BBA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pi-Weahter-TodayWidget";
+			productName = "Pi-Weahter-TodayWidget";
+			productReference = 4DED4D5E1E86B36C00929BBA /* Pi-Weahter-TodayWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		4DF394C71DA9BB7400819632 /* Pi-WeatherWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF394ED1DA9BB7400819632 /* Build configuration list for PBXNativeTarget "Pi-WeatherWatch" */;
+			buildPhases = (
+				4DF394C61DA9BB7400819632 /* Resources */,
+				4DF394EC1DA9BB7400819632 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DF394D71DA9BB7400819632 /* PBXTargetDependency */,
+			);
+			name = "Pi-WeatherWatch";
+			productName = "Pi-WeatherWatch";
+			productReference = 4DF394C81DA9BB7400819632 /* Pi-WeatherWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		4DF394D31DA9BB7400819632 /* Pi-WeatherWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DF394E91DA9BB7400819632 /* Build configuration list for PBXNativeTarget "Pi-WeatherWatch Extension" */;
+			buildPhases = (
+				4DF394D01DA9BB7400819632 /* Sources */,
+				4DF394D11DA9BB7400819632 /* Frameworks */,
+				4DF394D21DA9BB7400819632 /* Resources */,
+				B1B63FB41E8C76C1000D2072 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pi-WeatherWatch Extension";
+			productName = "Pi-WeatherWatch Extension";
+			productReference = 4DF394D41DA9BB7400819632 /* Pi-WeatherWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		B14876981D9337E300A05531 /* Pi-Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B14876AD1D9337E300A05531 /* Build configuration list for PBXNativeTarget "Pi-Weather" */;
+			buildPhases = (
+				B14876951D9337E300A05531 /* Sources */,
+				4DE7F9821E8856FF00D9D7C2 /* Linting */,
+				B14876961D9337E300A05531 /* Frameworks */,
+				B14876971D9337E300A05531 /* Resources */,
+				4D2BB2A41DA7029F00F90DF2 /* ShellScript */,
+				4DF394F01DA9BB7400819632 /* Embed Watch Content */,
+				4DF395061DA9BBFF00819632 /* Embed App Extensions */,
+				B17738551E8D910100EC05BD /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DF394E71DA9BB7400819632 /* PBXTargetDependency */,
+				4DED4D681E86B36D00929BBA /* PBXTargetDependency */,
+			);
+			name = "Pi-Weather";
+			productName = "Pi-Weather";
+			productReference = B14876991D9337E300A05531 /* Pi-Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B14876911D9337E300A05531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "JG-Bits UG (haftungsbeschränkt)";
+				TargetAttributes = {
+					4D981D021D942FFA00C38ECF = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+					4DED4D5D1E86B36C00929BBA = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					4DF394C71DA9BB7400819632 = {
+						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0820;
+						ProvisioningStyle = Manual;
+					};
+					4DF394D31DA9BB7400819632 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+					};
+					B14876981D9337E300A05531 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 0;
+							};
+							com.apple.Siri = {
+								enabled = 0;
+							};
+							com.apple.iCloud = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = B14876941D9337E300A05531 /* Build configuration list for PBXProject "Pi-Weather" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B14876901D9337E300A05531;
+			productRefGroup = B148769A1D9337E300A05531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B14876981D9337E300A05531 /* Pi-Weather */,
+				4D981D021D942FFA00C38ECF /* Pi-WeatherTv */,
+				4DF394C71DA9BB7400819632 /* Pi-WeatherWatch */,
+				4DF394D31DA9BB7400819632 /* Pi-WeatherWatch Extension */,
+				4DED4D5D1E86B36C00929BBA /* Pi-Weahter-TodayWidget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D981D011D942FFA00C38ECF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D981D0F1D942FFB00C38ECF /* Assets.xcassets in Resources */,
+				4D981D0D1D942FFB00C38ECF /* Main.storyboard in Resources */,
+				4D4863951E9D8D3E00D0E5DF /* licenses in Resources */,
+				B1EF4B121DB950C000E3A433 /* Assets.xcassets in Resources */,
+				4D4130711D94519D00D3B715 /* CircleViewTv.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DED4D5C1E86B36C00929BBA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DED4D651E86B36D00929BBA /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF394C61DA9BB7400819632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF394CE1DA9BB7400819632 /* Assets.xcassets in Resources */,
+				B11D647D1DB95B93003C9F7C /* Assets.xcassets in Resources */,
+				4DF394CC1DA9BB7400819632 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF394D21DA9BB7400819632 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF394E41DA9BB7400819632 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14876971D9337E300A05531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF394B61DA9ADBB00819632 /* CircleView.xib in Resources */,
+				4D2BB2A71DA7035900F90DF2 /* LaunchScreen.storyboard in Resources */,
+				4D4863941E9D8D3E00D0E5DF /* licenses in Resources */,
+				4D2BB2A61DA7035500F90DF2 /* Assets.xcassets in Resources */,
+				4D2BB2A51DA7035000F90DF2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D2BB2A41DA7029F00F90DF2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/KVNProgressKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		4D48638F1E9D833400D0E5DF /* Linting */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Linting;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		4DE7F9821E8856FF00D9D7C2 /* Linting */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Linting;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		4DF4B72C1E945A7000996AF2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/FontAwesome.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		B1B63FB41E8C76C1000D2072 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/watchOS/FontAwesome.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D981CFF1D942FFA00C38ECF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D4130741D94599D00D3B715 /* APIController.swift in Sources */,
+				4D41306F1D944A1000D3B715 /* CircleView.swift in Sources */,
+				4DE7F97E1E8856AC00D9D7C2 /* Sensor.swift in Sources */,
+				4D0311981D946AD200034E39 /* AppSettings.swift in Sources */,
+				4D4863921E9D8D0100D0E5DF /* LicenseViewController.swift in Sources */,
+				4DED4D501E86AEDD00929BBA /* UIColorExtension.swift in Sources */,
+				4DE7F9781E8855FF00D9D7C2 /* API.swift in Sources */,
+				4DED4D571E86B13800929BBA /* ChartViewController.swift in Sources */,
+				4D981D061D942FFB00C38ECF /* AppDelegate.swift in Sources */,
+				4D981D081D942FFB00C38ECF /* LiveDataViewController.swift in Sources */,
+				4DF394B91DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift in Sources */,
+				B198F2A51EA181FC00340E06 /* StringExtension.swift in Sources */,
+				B1C6A7E71E8EEE08003BCBAD /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DED4D5A1E86B36C00929BBA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C6A7DA1E8EC522003BCBAD /* APIController.swift in Sources */,
+				4DE7F97B1E8855FF00D9D7C2 /* API.swift in Sources */,
+				4DE7F9811E8856AC00D9D7C2 /* Sensor.swift in Sources */,
+				B1C6A7DB1E8EC61D003BCBAD /* AppSettings.swift in Sources */,
+				4DED4D621E86B36D00929BBA /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DF394D01DA9BB7400819632 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DF394E01DA9BB7400819632 /* NotificationController.swift in Sources */,
+				4DED4D511E86AEDD00929BBA /* UIColorExtension.swift in Sources */,
+				4DF394E21DA9BB7400819632 /* ComplicationController.swift in Sources */,
+				B1EF4B111DB93B7C00E3A433 /* AppSettings.swift in Sources */,
+				4DE7F97F1E8856AC00D9D7C2 /* Sensor.swift in Sources */,
+				4DF394DE1DA9BB7400819632 /* ExtensionDelegate.swift in Sources */,
+				4DF394DC1DA9BB7400819632 /* InterfaceController.swift in Sources */,
+				4DE7F9791E8855FF00D9D7C2 /* API.swift in Sources */,
+				B1EF4B0C1DB93AA200E3A433 /* APIController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B14876951D9337E300A05531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D4130731D94599D00D3B715 /* APIController.swift in Sources */,
+				4D41306E1D944A1000D3B715 /* CircleView.swift in Sources */,
+				4DE7F97D1E8856AC00D9D7C2 /* Sensor.swift in Sources */,
+				4D0311971D946A5E00034E39 /* AppSettings.swift in Sources */,
+				4D4863911E9D8D0100D0E5DF /* LicenseViewController.swift in Sources */,
+				4DED4D4F1E86AEDD00929BBA /* UIColorExtension.swift in Sources */,
+				4DE7F9771E8855FF00D9D7C2 /* API.swift in Sources */,
+				B11D64861DB97868003C9F7C /* LiveDataViewController.swift in Sources */,
+				4DED4D561E86B13800929BBA /* ChartViewController.swift in Sources */,
+				B148769D1D9337E300A05531 /* AppDelegate.swift in Sources */,
+				4DF394B81DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift in Sources */,
+				B198F2A41EA181FC00340E06 /* StringExtension.swift in Sources */,
+				B1C6A7E61E8EEE08003BCBAD /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DED4D681E86B36D00929BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DED4D5D1E86B36C00929BBA /* Pi-Weahter-TodayWidget */;
+			targetProxy = 4DED4D671E86B36D00929BBA /* PBXContainerItemProxy */;
+		};
+		4DF394D71DA9BB7400819632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF394D31DA9BB7400819632 /* Pi-WeatherWatch Extension */;
+			targetProxy = 4DF394D61DA9BB7400819632 /* PBXContainerItemProxy */;
+		};
+		4DF394E71DA9BB7400819632 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DF394C71DA9BB7400819632 /* Pi-WeatherWatch */;
+			targetProxy = 4DF394E61DA9BB7400819632 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D981D0B1D942FFB00C38ECF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D981D0C1D942FFB00C38ECF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4DED4D631E86B36D00929BBA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DED4D641E86B36D00929BBA /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+		4DF394CA1DA9BB7400819632 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DF394CB1DA9BB7400819632 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		B14876A21D9337E300A05531 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B14876A31D9337E300A05531 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B14876A71D9337E300A05531 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B14876A81D9337E300A05531 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D981D111D942FFB00C38ECF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Pi-WeatherTv",
+				);
+				INFOPLIST_FILE = "Pi-WeatherTv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jg-bits.pi-weather.tv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		4D981D121D942FFB00C38ECF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+					"$(PROJECT_DIR)/Pi-WeatherTv",
+				);
+				INFOPLIST_FILE = "Pi-WeatherTv/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jg-bits.pi-weather.tv";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		4DED4D6B1E86B36D00929BBA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Pi-Weahter-TodayWidget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jg-bits.pi-weather.todaywidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4DED4D6C1E86B36D00929BBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "Pi-Weahter-TodayWidget/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jg-bits.pi-weather.todaywidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4DF394EA1DA9BB7400819632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "Pi-WeatherWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jg-bits.pi-weather.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		4DF394EB1DA9BB7400819632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+				);
+				INFOPLIST_FILE = "Pi-WeatherWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jg-bits.pi-weather.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		4DF394EE1DA9BB7400819632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = Pi_WeatherWatch_Extension;
+				INFOPLIST_FILE = "Pi-WeatherWatch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jg-bits.pi-weather.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Pi-WeatherWatch-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		4DF394EF1DA9BB7400819632 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = Pi_WeatherWatch_Extension;
+				INFOPLIST_FILE = "Pi-WeatherWatch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jg-bits.pi-weather.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Pi-WeatherWatch-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		B14876AB1D9337E300A05531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B14876AC1D9337E300A05531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B14876AE1D9337E300A05531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pi-WeatherTv",
+					"$(PROJECT_DIR)/Pi-Weather",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Pi-Weather/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jg-bits.pi-weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B14876AF1D9337E300A05531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pi-WeatherTv",
+					"$(PROJECT_DIR)/Pi-Weather",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Pi-Weather/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jg-bits.pi-weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D981D131D942FFB00C38ECF /* Build configuration list for PBXNativeTarget "Pi-WeatherTv" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D981D111D942FFB00C38ECF /* Debug */,
+				4D981D121D942FFB00C38ECF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DED4D6A1E86B36D00929BBA /* Build configuration list for PBXNativeTarget "Pi-Weahter-TodayWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DED4D6B1E86B36D00929BBA /* Debug */,
+				4DED4D6C1E86B36D00929BBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF394E91DA9BB7400819632 /* Build configuration list for PBXNativeTarget "Pi-WeatherWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF394EA1DA9BB7400819632 /* Debug */,
+				4DF394EB1DA9BB7400819632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DF394ED1DA9BB7400819632 /* Build configuration list for PBXNativeTarget "Pi-WeatherWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DF394EE1DA9BB7400819632 /* Debug */,
+				4DF394EF1DA9BB7400819632 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B14876941D9337E300A05531 /* Build configuration list for PBXProject "Pi-Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14876AB1D9337E300A05531 /* Debug */,
+				B14876AC1D9337E300A05531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B14876AD1D9337E300A05531 /* Build configuration list for PBXNativeTarget "Pi-Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B14876AE1D9337E300A05531 /* Debug */,
+				B14876AF1D9337E300A05531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B14876911D9337E300A05531 /* Project object */;
+}

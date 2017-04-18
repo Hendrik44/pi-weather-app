@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--Messwerte-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Messwerte" contentMode="scaleAspectFit" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Pi_WeatherWatch" customModuleProvider="target">
+                    <items>
+                        <separator alignment="left" id="F3Q-9I-rsX"/>
+                        <group width="1" height="40" alignment="left" id="R6L-8S-ocq">
+                            <items>
+                                <imageView width="50" height="35" alignment="left" verticalAlignment="center" image="thermometer-64" contentMode="scaleAspectFit" id="mcH-uq-Ya8"/>
+                                <label width="1" widthAdjustment="-50" height="1" alignment="left" text="-- °C" textAlignment="center" id="1uz-8g-I2b"/>
+                            </items>
+                        </group>
+                        <group width="1" height="40" alignment="left" id="Odl-j7-Vce">
+                            <items>
+                                <imageView width="50" height="35" alignment="left" verticalAlignment="center" image="drop-percentage-64" contentMode="scaleAspectFit" id="H1B-WD-V9m"/>
+                                <label width="1" widthAdjustment="-50" height="1" alignment="left" text="-- %" textAlignment="center" id="b1X-nq-vtN"/>
+                            </items>
+                        </group>
+                        <group width="1" height="40" alignment="left" id="rFF-tq-TTa">
+                            <items>
+                                <imageView width="50" height="30" alignment="left" verticalAlignment="center" image="wind-64" contentMode="scaleAspectFit" id="NfV-yk-BgS"/>
+                                <label width="1" widthAdjustment="-50" height="1" alignment="left" text="-- hPa" textAlignment="center" id="UCy-Nm-PVW"/>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Lade Messwerte..." textAlignment="center" id="9aa-GX-UNR">
+                            <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="humidityLabel" destination="b1X-nq-vtN" id="Sy1-5p-mbU"/>
+                        <outlet property="pressureLabel" destination="UCy-Nm-PVW" id="btc-Ud-4MW"/>
+                        <outlet property="temperatureLabel" destination="1uz-8g-I2b" id="6Gy-uz-geL"/>
+                        <outlet property="timestampLabel" destination="9aa-GX-UNR" id="ey7-oB-urV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.69230769230771" y="344.35897435897436"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Pi_WeatherWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

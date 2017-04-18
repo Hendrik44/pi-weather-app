@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CircleView" customModule="Pi_Weather" customModuleProvider="target">
+            <connections>
+                <outlet property="iconImageView" destination="d0h-SG-iRj" id="EnE-oc-j7y"/>
+                <outlet property="textLabel" destination="eAD-ns-aaN" id="ebI-iV-a1o"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="512" height="512"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="eAD-ns-aaN" customClass="LabelWithAdaptiveTextHeight" customModule="Pi_Weather" customModuleProvider="target">
+                    <rect key="frame" x="10" y="225.5" width="492" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="gHN-sO-zkM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="45"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d0h-SG-iRj">
+                    <rect key="frame" x="181.5" y="297" width="149" height="149"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="d0h-SG-iRj" secondAttribute="height" multiplier="1:1" id="EM5-uO-KUH"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="d0h-SG-iRj" firstAttribute="centerX" secondItem="eAD-ns-aaN" secondAttribute="centerX" id="SwK-dt-GWu"/>
+                <constraint firstItem="eAD-ns-aaN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="TM7-hJ-Hub"/>
+                <constraint firstItem="eAD-ns-aaN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="WYB-Sm-nUN"/>
+                <constraint firstItem="d0h-SG-iRj" firstAttribute="top" secondItem="eAD-ns-aaN" secondAttribute="bottom" constant="10" id="pHY-zu-Miu"/>
+                <constraint firstAttribute="bottom" secondItem="d0h-SG-iRj" secondAttribute="bottom" constant="66" id="s5l-Fh-8NG"/>
+                <constraint firstItem="eAD-ns-aaN" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="udr-FV-OxQ"/>
+                <constraint firstAttribute="trailing" secondItem="eAD-ns-aaN" secondAttribute="trailing" constant="10" id="xXe-4K-1m0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

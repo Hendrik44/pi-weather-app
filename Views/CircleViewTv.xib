@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="appleTV" orientation="landscape">
+        <adaptation id="light"/>
+    </device>
+    <dependencies>
+        <deployment identifier="tvOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CircleView" customModule="Pi_WeatherTv" customModuleProvider="target">
+            <connections>
+                <outlet property="iconImageView" destination="3WP-Dl-e12" id="4e0-OD-iZB"/>
+                <outlet property="textLabel" destination="zdh-fX-0QP" id="2U9-IH-Ce9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="512" height="512"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zdh-fX-0QP">
+                    <rect key="frame" x="10" y="225" width="492" height="62"/>
+                    <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="45"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3WP-Dl-e12">
+                    <rect key="frame" x="181" y="297" width="151" height="151"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="3WP-Dl-e12" secondAttribute="height" multiplier="1:1" id="P2a-Fg-zT8"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="zdh-fX-0QP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5HD-oZ-cm6"/>
+                <constraint firstItem="3WP-Dl-e12" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PtZ-Fy-ob6"/>
+                <constraint firstAttribute="trailing" secondItem="zdh-fX-0QP" secondAttribute="trailing" constant="10" id="U6f-FV-yhU"/>
+                <constraint firstAttribute="bottom" secondItem="3WP-Dl-e12" secondAttribute="bottom" constant="64" id="gCr-AM-w5p"/>
+                <constraint firstItem="3WP-Dl-e12" firstAttribute="top" secondItem="zdh-fX-0QP" secondAttribute="bottom" constant="10" id="i0s-gl-jE3"/>
+                <constraint firstItem="zdh-fX-0QP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="mXG-AP-zxu"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
