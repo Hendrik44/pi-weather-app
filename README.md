@@ -1,11 +1,15 @@
 # Pi-Weather iOS-, tvOS- and watchOS-App
 
-This project was a part of my bachelor thesis and after some rewrite/refactoring and extending (tvOS- and watchOS-Support) now its opensource. Feel free to extend, customize and optimize this project and dont forget pull-request ;-)
+This project was a part of my bachelor thesis and after some rewrite/refactoring and extending (tvOS- and watchOS-Support) now its opensource. Feel free to extend, customize and optimize and dont forget pull-request ;-)
 
 # What you need:
 * [Pi-Weather-Server](https://github.com/Hendrik44/pi-weather-server)
 * iOS-/tvOS-/watchOS-Device
 * Xcode 8.3 + Swift 3.1
+* Carthage
+
+Run: ```carthage update```, build project and have fun 🎉   
+My pull-request to FontAwesome.Swift is currently only on master so you have to build FontAwesome.swift manually via `carthage build FontAwesome.swift`. 
 
 # Screenhots tvOS
 ![tvOS-Screen1](/images/screen-tvOS1.png?raw=true)
