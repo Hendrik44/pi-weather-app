@@ -12,16 +12,13 @@ Run: ```carthage update```, build project and have fun 🎉
 My pull-request to FontAwesome.Swift is currently only on master so you have to build FontAwesome.swift manually via `carthage build FontAwesome.swift`. 
 
 # Screenhots tvOS
-![tvOS-Screen1](/images/screen-tvOS1.png?raw=true)
-![tvOS-Screen2](/images/screen-tvOS2.png?raw=true)
-![tvOS-Screen2](/images/screen-tvOS3.png?raw=true)
+![tvOS-Screen1](/images/pi-weather-tvos1.png?raw=true)
+![tvOS-Screen2](/images/pi-weather-tvos2.png?raw=true)
+![tvOS-Screen2](/images/pi-weather-tvos3.png?raw=true)
 
-# Screenshots iOS
-![screen-ipad1](/images/screen-ipad1.png?raw=true)
-![screen-ipad2](/images/screen-ipad2.png?raw=true)
-
-# Screenshot watchOS
-![screen-watchOS](/images/screen-watchOS.png?raw=true "screen-watchOS")
+# Screenshots iOS & watchOS
+![screen-ios-watchos](/images/pi-weather-ios-watchos.png?raw=true)
+![screen-ipad](/images/pi-weather-ios-ipad.png?raw=true)
 
 ## Found issues?
 Open an issue or create pull request and i wil merge it.
