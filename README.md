@@ -21,7 +21,7 @@ My pull-request to FontAwesome.Swift is currently only on master so you have to 
 ![screen-ipad](/images/pi-weather-ios-ipad.png?raw=true)
 
 ## Found issues?
-Open an issue or create pull request and i wil merge it.
+Open an issue or create pull request and i will merge it.
 
 # License
 MIT License
