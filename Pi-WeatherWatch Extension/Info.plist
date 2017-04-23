@@ -59,7 +59,7 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>com.jg-bits.pi-weather.watchkitapp</string>
+			<string>de.jg-bits.pi-weather.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
