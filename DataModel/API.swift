@@ -13,7 +13,7 @@ struct API : OptionSet {
     let rawValue : UInt8
     
     static let httpProtocol = "http"
-    static let host = "raspberrypizerow.local"
+    static let host = "raspberrypi.local"
     static let basePath = "/api"
     static let port = 3000
     
