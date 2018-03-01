@@ -11,18 +11,14 @@ import UIKit
 extension String {
     
     var html2AttributedString: NSAttributedString? {
-        guard
-            let data = data(using: String.Encoding.utf8)
-            else { return nil }
         do {
-            let attributedOptions : [String: AnyObject] = [
-                NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType as AnyObject,
-                NSCharacterEncodingDocumentAttribute: String.Encoding.utf8.rawValue as AnyObject
-            ]
-            return try NSAttributedString(data: data, options: attributedOptions, documentAttributes: nil)
-        } catch let error as NSError {
-            print(error.localizedDescription)
-            return  nil
+            return try NSAttributedString(data: Data(utf8),
+                                          options: [.documentType: NSAttributedString.DocumentType.html,
+                                                    .characterEncoding: String.Encoding.utf8.rawValue],
+                                          documentAttributes: nil)
+        } catch {
+            print("error: ", error)
+            return nil
         }
     }
     var html2String: String {

@@ -89,7 +89,7 @@ class LiveDataViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    func refresh() {
+    @objc func refresh() {
         
         APIController().liveDataForSensorType(.all) { (sensorData, timestamp, error) in
             

@@ -43,7 +43,7 @@ class LabelWithAdaptiveTextHeight: UILabel {
                 let labelHeight = frame.size.height
                 
                 let testStringHeight = labelText.size(
-                    attributes: [NSFontAttributeName: font.withSize(fontSizeAverage)]
+                    withAttributes: [NSAttributedStringKey.font: font.withSize(fontSizeAverage)]
                     ).height
                 
                 textAndLabelHeightDiff = labelHeight - testStringHeight
