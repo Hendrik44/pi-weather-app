@@ -5,7 +5,7 @@ This project was a part of my bachelor thesis and after some rewrite/refactoring
 # What you need:
 * [Pi-Weather-Server](https://github.com/Hendrik44/pi-weather-server)
 * iOS-/tvOS-/watchOS-Device
-* Xcode 8.3 + Swift 3.1
+* Xcode 9.2 + Swift 4
 * Carthage
 
 Run: ```carthage update```, build project and have fun 🎉   
