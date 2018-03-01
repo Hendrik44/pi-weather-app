@@ -54,7 +54,7 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         completionHandler(NCUpdateResult.newData)
     }
     
-    func refresh() {
+    @objc func refresh() {
         
         APIController().liveDataForSensorType(.all) { (sensorData, timestamp, error) in
             

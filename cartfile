@@ -4,4 +4,4 @@ github "danielgindi/Charts" ~> 3.0.2
 github "Hendrik44/KVNProgress" "master"
 
 # https://github.com/thii/FontAwesome.swift
-github "thii/FontAwesome.swift" == 1.1.1
+github "thii/FontAwesome.swift" ~> 1.1.1

@@ -43,7 +43,7 @@ class InterfaceController: WKInterfaceController {
         timer?.invalidate()
     }
     
-    func refresh() {
+    @objc func refresh() {
         
         APIController().liveDataForSensorType(.all) { (sensorData, timestamp, error) in
             
