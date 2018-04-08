@@ -58,6 +58,12 @@
 		B104D3BF1E952E630025BA9B /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B104D3BE1E952E630025BA9B /* FontAwesome.framework */; };
 		B11D647D1DB95B93003C9F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF394E31DA9BB7400819632 /* Assets.xcassets */; };
 		B11D64861DB97868003C9F7C /* LiveDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D981D071D942FFB00C38ECF /* LiveDataViewController.swift */; };
+		B12FF8AB204892E7003F9661 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8A9204892E7003F9661 /* Crashlytics.framework */; };
+		B12FF8AC204892E7003F9661 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8A9204892E7003F9661 /* Crashlytics.framework */; };
+		B12FF8AE204892E7003F9661 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8A9204892E7003F9661 /* Crashlytics.framework */; };
+		B12FF8AF204892E7003F9661 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8AA204892E7003F9661 /* Fabric.framework */; };
+		B12FF8B0204892E7003F9661 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8AA204892E7003F9661 /* Fabric.framework */; };
+		B12FF8B2204892E7003F9661 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8AA204892E7003F9661 /* Fabric.framework */; };
 		B148769D1D9337E300A05531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B148769C1D9337E300A05531 /* AppDelegate.swift */; };
 		B16357A21E8C7243002751F4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF394F71DA9BBFF00819632 /* NotificationCenter.framework */; };
 		B17738531E8D910100EC05BD /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17738521E8D910100EC05BD /* Charts.framework */; };
@@ -202,6 +208,8 @@
 		4DF4B72D1E945AA600996AF2 /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/tvOS/FontAwesome.framework; sourceTree = SOURCE_ROOT; };
 		B104D3BE1E952E630025BA9B /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/watchOS/FontAwesome.framework; sourceTree = SOURCE_ROOT; };
 		B11D647F1DB9631F003C9F7C /* Pi-Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pi-Weather.entitlements"; sourceTree = "<group>"; };
+		B12FF8A9204892E7003F9661 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		B12FF8AA204892E7003F9661 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		B14876991D9337E300A05531 /* Pi-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pi-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B148769C1D9337E300A05531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B14876A31D9337E300A05531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -215,6 +223,8 @@
 		B1C6A7E11E8EE0D0003BCBAD /* KVNProgressKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KVNProgressKit.framework; path = Carthage/Build/iOS/KVNProgressKit.framework; sourceTree = SOURCE_ROOT; };
 		B1C6A7E31E8EE6A5003BCBAD /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/iOS/FontAwesome.framework; sourceTree = SOURCE_ROOT; };
 		B1C6A7E51E8EEE08003BCBAD /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ViewController/SettingsViewController.swift; sourceTree = "<group>"; };
+		B1F6966C207A7D3900E9859C /* fabric.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fabric.apikey; path = Resources/fabric.apikey; sourceTree = "<group>"; };
+		B1F6966D207A7D3900E9859C /* fabric.buildsecret */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = fabric.buildsecret; path = Resources/fabric.buildsecret; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,7 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B177385A1E8D9B6E00EC05BD /* Charts.framework in Frameworks */,
+				B12FF8AC204892E7003F9661 /* Crashlytics.framework in Frameworks */,
 				4DF4B72E1E945AA600996AF2 /* FontAwesome.framework in Frameworks */,
+				B12FF8B0204892E7003F9661 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +243,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B12FF8AE204892E7003F9661 /* Crashlytics.framework in Frameworks */,
 				4DED4D5F1E86B36D00929BBA /* NotificationCenter.framework in Frameworks */,
+				B12FF8B2204892E7003F9661 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,9 +262,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B17738531E8D910100EC05BD /* Charts.framework in Frameworks */,
+				B12FF8AB204892E7003F9661 /* Crashlytics.framework in Frameworks */,
 				B17738571E8D915F00EC05BD /* FontAwesome.framework in Frameworks */,
 				B1C6A7E21E8EE0D0003BCBAD /* KVNProgressKit.framework in Frameworks */,
 				B16357A21E8C7243002751F4 /* NotificationCenter.framework in Frameworks */,
+				B12FF8AF204892E7003F9661 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +399,8 @@
 		4DF394F61DA9BBFF00819632 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B12FF8A9204892E7003F9661 /* Crashlytics.framework */,
+				B12FF8AA204892E7003F9661 /* Fabric.framework */,
 				4D4863961E9D8F9400D0E5DF /* WebKit.framework */,
 				4DF394F71DA9BBFF00819632 /* NotificationCenter.framework */,
 			);
@@ -415,6 +433,8 @@
 				4DF394F61DA9BBFF00819632 /* Frameworks */,
 				B148769A1D9337E300A05531 /* Products */,
 				4DED4D4D1E86AEDD00929BBA /* Pi-WeatherWatch-Bridging-Header.h */,
+				B1F6966C207A7D3900E9859C /* fabric.apikey */,
+				B1F6966D207A7D3900E9859C /* fabric.buildsecret */,
 			);
 			sourceTree = "<group>";
 		};
@@ -527,10 +547,11 @@
 				4DE7F9821E8856FF00D9D7C2 /* Linting */,
 				B14876961D9337E300A05531 /* Frameworks */,
 				B14876971D9337E300A05531 /* Resources */,
-				4D2BB2A41DA7029F00F90DF2 /* ShellScript */,
+				4D2BB2A41DA7029F00F90DF2 /* Copy Carthage Frameworks */,
 				4DF394F01DA9BB7400819632 /* Embed Watch Content */,
 				4DF395061DA9BBFF00819632 /* Embed App Extensions */,
 				B17738551E8D910100EC05BD /* Embed Frameworks */,
+				B12FF8A820488F51003F9661 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -669,7 +690,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4D2BB2A41DA7029F00F90DF2 /* ShellScript */ = {
+		4D2BB2A41DA7029F00F90DF2 /* Copy Carthage Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -678,6 +699,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/KVNProgressKit.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/FontAwesome.framework",
 			);
+			name = "Copy Carthage Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,7 +732,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "#if which swiftlint >/dev/null; then\n#swiftlint\n#else\n#echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\n#fi";
 		};
 		4DF4B72C1E945A7000996AF2 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -725,6 +747,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		B12FF8A820488F51003F9661 /* Fabric */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Fabric;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/Resources/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/Resources/fabric.buildsecret\"\n\nif test -f \"$FABRIC_APIKEY_FILE\" -a -f \"$FABRIC_BUILDSECRET_FILE\"; then\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\n\necho \"Uploading dSYM files to Crashlytics\"\n\"${SRCROOT}/Fabric.framework/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"\nfi";
 		};
 		B1B63FB41E8C76C1000D2072 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -886,6 +922,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 					"$(PROJECT_DIR)/Pi-WeatherTv",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Pi-WeatherTv/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -910,6 +947,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
 					"$(PROJECT_DIR)/Pi-WeatherTv",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Pi-WeatherTv/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -928,6 +966,10 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5B54HJT537;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Pi-Weahter-TodayWidget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -945,6 +987,10 @@
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 5B54HJT537;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Pi-Weahter-TodayWidget/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -966,6 +1012,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Pi-WeatherWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -990,6 +1037,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/watchOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Pi-WeatherWatch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -1173,6 +1221,7 @@
 					"$(PROJECT_DIR)/Pi-WeatherTv",
 					"$(PROJECT_DIR)/Pi-Weather",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Pi-Weather/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1198,6 +1247,7 @@
 					"$(PROJECT_DIR)/Pi-WeatherTv",
 					"$(PROJECT_DIR)/Pi-Weather",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Pi-Weather/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
