@@ -5,11 +5,11 @@ This project was a part of my bachelor thesis and after some rewrite/refactoring
 # What you need:
 * [Pi-Weather-Server](https://github.com/Hendrik44/pi-weather-server)
 * iOS-/tvOS-/watchOS-Device
-* Xcode 9.2 + Swift 4
+* Xcode 9.3 + Swift 4.1
 * Carthage
 
-Run: ```carthage update```, build project and have fun 🎉   
-My pull-request to FontAwesome.Swift is currently only on master so you have to build FontAwesome.swift manually via `carthage build FontAwesome.swift`. 
+Run: ```carthage update --no-use-binaries```, build project and have fun 🎉  
+You have to use ```--no-use-binaries``` because the prebuild Binary for Fontawesome is not build with Swift 4.1 otherwise you will get an error.
 
 # Screenhots tvOS
 ![tvOS-Screen1](/images/pi-weather-tvos1.png?raw=true)
@@ -26,7 +26,7 @@ Open an issue or create pull request and i will merge it.
 # License
 MIT License
 
-Copyright (c) 2017 Hendrik Jürst
+Copyright (c) 2018 Hendrik Jürst
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
