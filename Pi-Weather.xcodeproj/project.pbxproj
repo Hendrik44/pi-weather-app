@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		4D0311971D946A5E00034E39 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0311961D946A5E00034E39 /* AppSettings.swift */; };
 		4D0311981D946AD200034E39 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0311961D946A5E00034E39 /* AppSettings.swift */; };
+		4D1A630F20A4EC3C00787E3C /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = B1F6966C207A7D3900E9859C /* fabric.apikey */; };
+		4D1A631020A4EC3D00787E3C /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = B1F6966C207A7D3900E9859C /* fabric.apikey */; };
 		4D2BB2A51DA7035000F90DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14876A21D9337E300A05531 /* Main.storyboard */; };
 		4D2BB2A61DA7035500F90DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14876A51D9337E300A05531 /* Assets.xcassets */; };
 		4D2BB2A71DA7035900F90DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14876A71D9337E300A05531 /* LaunchScreen.storyboard */; };
@@ -645,6 +647,7 @@
 				4D981D0F1D942FFB00C38ECF /* Assets.xcassets in Resources */,
 				4D981D0D1D942FFB00C38ECF /* Main.storyboard in Resources */,
 				4D4863951E9D8D3E00D0E5DF /* licenses in Resources */,
+				4D1A631020A4EC3D00787E3C /* fabric.apikey in Resources */,
 				B1EF4B121DB950C000E3A433 /* Assets.xcassets in Resources */,
 				4D4130711D94519D00D3B715 /* CircleViewTv.xib in Resources */,
 			);
@@ -683,6 +686,7 @@
 				4DF394B61DA9ADBB00819632 /* CircleView.xib in Resources */,
 				4D2BB2A71DA7035900F90DF2 /* LaunchScreen.storyboard in Resources */,
 				4D4863941E9D8D3E00D0E5DF /* licenses in Resources */,
+				4D1A630F20A4EC3C00787E3C /* fabric.apikey in Resources */,
 				4D2BB2A61DA7035500F90DF2 /* Assets.xcassets in Resources */,
 				4D2BB2A51DA7035000F90DF2 /* Main.storyboard in Resources */,
 			);
@@ -917,8 +921,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5B54HJT537;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
@@ -943,8 +949,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5B54HJT537;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/tvOS",
@@ -968,7 +976,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5B54HJT537;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -988,8 +998,11 @@
 		4DED4D6C1E86B36D00929BBA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5B54HJT537;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -1035,7 +1048,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5B54HJT537;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1087,7 +1102,9 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5B54HJT537;
 				IBSC_MODULE = Pi_WeatherWatch_Extension;
 				INFOPLIST_FILE = "Pi-WeatherWatch/Info.plist";
@@ -1221,8 +1238,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5B54HJT537;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pi-WeatherTv",
@@ -1247,8 +1267,11 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 5B54HJT537;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pi-WeatherTv",
