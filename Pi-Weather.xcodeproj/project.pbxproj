@@ -12,6 +12,8 @@
 		4D2BB2A51DA7035000F90DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14876A21D9337E300A05531 /* Main.storyboard */; };
 		4D2BB2A61DA7035500F90DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B14876A51D9337E300A05531 /* Assets.xcassets */; };
 		4D2BB2A71DA7035900F90DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B14876A71D9337E300A05531 /* LaunchScreen.storyboard */; };
+		4D37437A20A4DED700AA93EF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B198F2A31EA181FC00340E06 /* StringExtension.swift */; };
+		4D37437B20A4DEDB00AA93EF /* LabelWithAdaptiveTextHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF394B71DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift */; };
 		4D41306E1D944A1000D3B715 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D41306D1D944A1000D3B715 /* CircleView.swift */; };
 		4D41306F1D944A1000D3B715 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D41306D1D944A1000D3B715 /* CircleView.swift */; };
 		4D4130711D94519D00D3B715 /* CircleViewTv.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D4130701D94519D00D3B715 /* CircleViewTv.xib */; };
@@ -44,7 +46,6 @@
 		4DED4D691E86B36D00929BBA /* Pi-Weahter-TodayWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DED4D5E1E86B36C00929BBA /* Pi-Weahter-TodayWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		4DF394B61DA9ADBB00819632 /* CircleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF394B51DA9ADBB00819632 /* CircleView.xib */; };
 		4DF394B81DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF394B71DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift */; };
-		4DF394B91DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DF394B71DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift */; };
 		4DF394CC1DA9BB7400819632 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DF394CA1DA9BB7400819632 /* Interface.storyboard */; };
 		4DF394CE1DA9BB7400819632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF394CD1DA9BB7400819632 /* Assets.xcassets */; };
 		4DF394D51DA9BB7400819632 /* Pi-WeatherWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DF394D41DA9BB7400819632 /* Pi-WeatherWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -73,7 +74,6 @@
 		B177385A1E8D9B6E00EC05BD /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17738591E8D9B6E00EC05BD /* Charts.framework */; };
 		B177385B1E8D9B6E00EC05BD /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B17738591E8D9B6E00EC05BD /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B198F2A41EA181FC00340E06 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B198F2A31EA181FC00340E06 /* StringExtension.swift */; };
-		B198F2A51EA181FC00340E06 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B198F2A31EA181FC00340E06 /* StringExtension.swift */; };
 		B1C6A7DA1E8EC522003BCBAD /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4130721D94599D00D3B715 /* APIController.swift */; };
 		B1C6A7DB1E8EC61D003BCBAD /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0311961D946A5E00034E39 /* AppSettings.swift */; };
 		B1C6A7E21E8EE0D0003BCBAD /* KVNProgressKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1C6A7E11E8EE0D0003BCBAD /* KVNProgressKit.framework */; };
@@ -576,6 +576,7 @@
 				TargetAttributes = {
 					4D981D021D942FFA00C38ECF = {
 						CreatedOnToolsVersion = 8.0;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					4DED4D5D1E86B36C00929BBA = {
@@ -790,11 +791,11 @@
 				4D4863921E9D8D0100D0E5DF /* LicenseViewController.swift in Sources */,
 				4DED4D501E86AEDD00929BBA /* UIColorExtension.swift in Sources */,
 				4DE7F9781E8855FF00D9D7C2 /* API.swift in Sources */,
+				4D37437B20A4DEDB00AA93EF /* LabelWithAdaptiveTextHeight.swift in Sources */,
 				4DED4D571E86B13800929BBA /* ChartViewController.swift in Sources */,
+				4D37437A20A4DED700AA93EF /* StringExtension.swift in Sources */,
 				4D981D061D942FFB00C38ECF /* AppDelegate.swift in Sources */,
 				4D981D081D942FFB00C38ECF /* LiveDataViewController.swift in Sources */,
-				4DF394B91DA9B72A00819632 /* LabelWithAdaptiveTextHeight.swift in Sources */,
-				B198F2A51EA181FC00340E06 /* StringExtension.swift in Sources */,
 				B1C6A7E71E8EEE08003BCBAD /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -930,7 +931,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
@@ -955,7 +957,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = appletvos;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 10.0;
 			};
