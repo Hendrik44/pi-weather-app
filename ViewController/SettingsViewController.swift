@@ -27,18 +27,20 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         static let iconSize = CGSize(width: 50, height: 50)
     #endif
     
-    var rows = [
+    var rows:[[[AnyObject]]] = [
         [
-            ["Neustarten",
-             SettingsViewController.getFontAwesomeIconForCell(.rotateRight)],
-            ["Herunterfahren",
+            ["Neustarten" as AnyObject,
+             SettingsViewController.getFontAwesomeIconForCell(.redo)],
+            ["Herunterfahren" as AnyObject,
              SettingsViewController.getFontAwesomeIconForCell(.powerOff)]
         ],
         [
-            ["Lizenzen",
+            ["Lizenzen" as AnyObject,
              SettingsViewController.getFontAwesomeIconForCell(.infoCircle)]
         ]
     ]
+    
+//    rows[indexPath.section][indexPath.row][0]
     
     var sectionTitles = [
         "Allgemein",
@@ -83,7 +85,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         cell.textLabel?.text = rows[indexPath.section][indexPath.row][0] as? String
         cell.imageView?.image = rows[indexPath.section][indexPath.row][1] as? UIImage
         
-        cell.detailTextLabel?.font = UIFont.fontAwesome(ofSize: 25)
+        cell.detailTextLabel?.font = UIFont.fontAwesome(ofSize: 25, style: .solid)
         cell.detailTextLabel?.text = String.fontAwesomeIcon(name: .angleRight)
 
         return cell
@@ -152,6 +154,6 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     class func getFontAwesomeIconForCell(_ icon:FontAwesome) -> UIImage {
-        return UIImage.fontAwesomeIcon(name: icon, textColor: self.iconColor, size: self.iconSize)
+        return UIImage.fontAwesomeIcon(name: icon, style: .solid, textColor: self.iconColor, size: self.iconSize)
     }
 }

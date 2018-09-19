@@ -34,6 +34,7 @@ class ChartViewController: UIViewController {
     {
         #if os(iOS)
             btnSettings.setImage(UIImage.fontAwesomeIcon(name: .cog,
+                                                         style: .solid,
                                                          textColor: UIColor(hex: 0xFFFFFF),
                                                          size: CGSize(width: btnSettings.bounds.width,
                                                                       height: btnSettings.bounds.height)),
