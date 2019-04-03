@@ -28,32 +28,39 @@ class LiveDataViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var tabImages = [
+        var tabImages:[[UIImage]] = [
             [UIImage.fontAwesomeIcon(name: .thermometerHalf,
+                                    style: .solid,
                                     textColor: UIColor.gray,
                                     size: CGSize(width: tabBarIconSize,
                                                  height: tabBarIconSize)).withRenderingMode(.alwaysOriginal),
             UIImage.fontAwesomeIcon(name: .thermometerHalf,
+                                    style: .solid,
                                     textColor: UIColor(hex: 0x2781B4),
                                     size: CGSize(width: tabBarIconSize,
                                                  height: tabBarIconSize)).withRenderingMode(.alwaysOriginal)],
-            [UIImage.fontAwesomeIcon(name: .lineChart,
+            [UIImage.fontAwesomeIcon(name: .chartLine,
+                                    style: .solid,
                                     textColor: UIColor.gray,
                                     size: CGSize(width: tabBarIconSize,
                                                  height: tabBarIconSize)).withRenderingMode(.alwaysOriginal),
-            UIImage.fontAwesomeIcon(name: .lineChart,
+            UIImage.fontAwesomeIcon(name: .chartLine,
+                                    style: .solid,
                                     textColor: UIColor(hex: 0x2781B4),
                                     size: CGSize(width: tabBarIconSize,
                                                  height: tabBarIconSize)).withRenderingMode(.alwaysOriginal)],
             [UIImage.fontAwesomeIcon(name: .cog,
+                                    style: .solid,
                                     textColor: UIColor.gray,
                                     size: CGSize(width: tabBarIconSize,
                                                  height: tabBarIconSize)).withRenderingMode(.alwaysOriginal),
             UIImage.fontAwesomeIcon(name: .cog,
+                                    style: .solid,
                                     textColor: UIColor(hex: 0x2781B4),
                                     size: CGSize(width: tabBarIconSize,
                                                  height: tabBarIconSize)).withRenderingMode(.alwaysOriginal)]
             ]
+
             var count = 0
             for tabItem in self.tabBarController!.tabBar.items! {
                 tabItem.image           = tabImages[count][0]

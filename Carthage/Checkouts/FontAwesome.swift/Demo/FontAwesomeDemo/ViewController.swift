@@ -30,34 +30,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var barButton: UIBarButtonItem!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var imageViewColored: UIImageView!
-    @IBOutlet weak var toolbarItem: UIBarButtonItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // FontAwesome icon in label
-        label.font = UIFont.fontAwesome(ofSize: 100)
-        label.text = String.fontAwesomeIcon(name: FontAwesome.github)
+        label.font = UIFont.fontAwesome(ofSize: 100, style: .brands)
+        label.text = String.fontAwesomeIcon(name: .github)
 
-        let attributes = [NSAttributedStringKey.font: UIFont.fontAwesome(ofSize: 20)]
+        let attributes = [NSAttributedString.Key.font: UIFont.fontAwesome(ofSize: 20, style: .brands)]
 
         // FontAwesome icon in button
-        button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30)
+        button.titleLabel?.font = UIFont.fontAwesome(ofSize: 30, style: .brands)
         button.setTitle(String.fontAwesomeIcon(name: .github), for: .normal)
 
         // FontAwesome icon as navigation bar item
         barButton.setTitleTextAttributes(attributes, for: .normal)
         barButton.title = String.fontAwesomeIcon(name: .github)
 
-        // FontAwesome icon as toolbar item
-        toolbarItem.setTitleTextAttributes(attributes, for: .normal)
-        toolbarItem.title = String.fontAwesomeIcon(name: .github)
-
         // FontAwesome icon as image
-        imageView.image = UIImage.fontAwesomeIcon(name: FontAwesome.github, textColor: UIColor.black, size: CGSize(width: 4000, height: 4000))
+        imageView.image = UIImage.fontAwesomeIcon(name: .github, style: .brands, textColor: .black, size: CGSize(width: 4000, height: 4000))
 
         // FontAwesome icon as image with background color
-        imageViewColored.image = UIImage.fontAwesomeIcon(name: FontAwesome.github, textColor: UIColor.blue, size: CGSize(width: 4000, height: 4000), backgroundColor: UIColor.red)
+        imageViewColored.image = UIImage.fontAwesomeIcon(name: .github, style: .brands, textColor: .white, size: CGSize(width: 4000, height: 4000), backgroundColor: .black)
     }
-
 }
