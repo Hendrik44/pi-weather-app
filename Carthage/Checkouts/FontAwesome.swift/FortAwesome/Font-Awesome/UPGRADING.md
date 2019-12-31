@@ -8,6 +8,76 @@ As always, [submit issues](https://github.com/FortAwesome/Font-Awesome/issues/ne
 
 ---
 
+## 5.11.2 to 5.12.0
+
+The 9-pointed icon named "haykal" was renamed to "bahai" to better match the
+symbol. If you were previously using the misnamed icon rename to "bahai" when
+upgrading.
+
+---
+
+## 5.11.1 to 5.11.2
+
+The scanner-image icon was previously using the same unicode value as the scanner icon.
+
+This has now been fixed and the scanner-image icon has a unique unicode value.
+
+The film-canister icon was misspelled as "film-cannister". This has been fixed.
+
+---
+
+## 5.11.0 to 5.11.1
+
+There are no breaking changes in this version upgrade.
+
+---
+
+## 5.10.2 to 5.11.0
+
+There are no breaking changes in this version upgrade.
+
+---
+
+## 5.10.1 to 5.10.2
+
+There are no breaking changes in this version upgrade.
+
+---
+
+## 5.10.0 to 5.10.1
+
+The Sass function `fa-content-secondary` which was part of the `duotone.scss`
+file has been removed due to its inconsistent behavior in different versions of
+Sass pre-processors. Specifically [`node-sass`](https://github.com/sass/node-sass) and
+[`sass`](https://github.com/sass/dart-sass) didn't produce the same output.
+
+---
+
+## 5.9.0 to 5.10.0
+
+The following icon shims have been changed to better match the original version 4 icon:
+
+* sort-alpha-desc
+* sort-amount-desc
+* sort-numeric-desc
+
+---
+
+## 5.8.2 to 5.9.0
+
+The nintendo-switch icon has been removed by legal request of Nintendo of America Inc.
+
+Font Awesome is no longer able to provide icons related to Nintendo, their
+gaming consoles, accessories, or games.
+
+---
+
+## 5.8.1 to 5.8.2
+
+There are no breaking changes in this version upgrade.
+
+---
+
 ## 5.8.0 to 5.8.1
 
 There are no breaking changes in this version upgrade.

@@ -92,7 +92,7 @@ class ChartViewController: UIViewController {
             
         }
         
-        let chartDataSet = LineChartDataSet(values: dataEntries, label: legendTexts[historyChoose.selectedSegmentIndex])
+        let chartDataSet = LineChartDataSet(entries: dataEntries, label: legendTexts[historyChoose.selectedSegmentIndex])
         chartDataSet.drawFilledEnabled = true
         chartDataSet.mode = LineChartDataSet.Mode.cubicBezier
         DispatchQueue.main.async(execute: {

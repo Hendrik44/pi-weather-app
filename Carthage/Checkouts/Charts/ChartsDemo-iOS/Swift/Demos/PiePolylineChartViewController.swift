@@ -6,7 +6,9 @@
 //  Copyright © 2017 jc. All rights reserved.
 //
 
-import UIKit
+#if canImport(UIKit)
+    import UIKit
+#endif
 import Charts
 
 class PiePolylineChartViewController: DemoBaseViewController {
@@ -65,7 +67,7 @@ class PiePolylineChartViewController: DemoBaseViewController {
                                      label: parties[i % parties.count])
         }
         
-        let set = PieChartDataSet(values: entries, label: "Election Results")
+        let set = PieChartDataSet(entries: entries, label: "Election Results")
         set.sliceSpace = 2
         
         

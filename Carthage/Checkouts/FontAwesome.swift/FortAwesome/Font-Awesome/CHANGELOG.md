@@ -2,11 +2,162 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/).
 
 **Note that references to the Font-Awesome-Pro repository refer to a GitHub
 repository that is by invitation only. You will get a 404 - Not Found if you do
 not have access**
+
+## [5.12.0](https://github.com/FortAwesome/Font-Awesome/releases/tag/5.12.0) - 2019-12-10
+
+### Added
+* New science fiction and household icons
+* Metadata in Yaml format now available in JS packages
+  @fortawesome/fontawesome-free and @fortawesome/fontawesome-pro
+
+### Changed
+* Updated twitch, safari, pied-piper, and android brand icon
+* Renaming haykal icon to bahai
+* Added "sideEffects: false" to JS icon packages to aid with tree-shaking
+
+### Fixed
+* Improved eye position on the dog icon
+* Updated solid style of the shape icon
+* Adding missing versions for balance-scale-left and balance-scale-right icons
+* Corrected missing cut-outs for envelope-open-dollar and envelope-open-text
+  which made swap opacity incorrect
+* Fixing icon mismatch for contract and expand icons in the version 4 shim
+* TypeScript definition includes optional params for layer() API call
+* Symbols can now be inserted using Windows Character Map, Word, and PowerPoint
+  FortAwesome/Font-Awesome#14614
+* Correcting the LICENSE.txt for @fortawesome/fontawesome-svg-core and
+  @fortawesome/fontawesome-common-types
+
+---
+
+## [5.11.2](https://github.com/FortAwesome/Font-Awesome/releases/tag/5.11.2) - 2019-09-23
+
+### Changed
+* Updated laravel brand icon
+
+### Fixed
+* New scanner-image icon was using the same unicode value as scanner causing overlapped icons
+* The film-canister icon was incorrectly spelled film-cannister
+
+---
+
+## [5.11.1](https://github.com/FortAwesome/Font-Awesome/releases/tag/5.11.1) - 2019-09-18
+
+### Fixed
+* Duotone icons updated in 5.11.0 had incorrect attribute order which caused
+  them to fail to load for all kits
+
+---
+
+## [5.11.0](https://github.com/FortAwesome/Font-Awesome/releases/tag/5.11.0) - 2019-09-18
+
+### Added
+* New tech, music, and western-themed icons
+* Added umbraco, swift, orcid, mdb (and one more surprise) brand icons
+
+### Fixed
+* SVG with JavaScript no longer duplicates the id attribute when in nesting mode
+* Corrected inconsistencies with the send-back and send-backward icons
+* Corrected inconsistencies with duotone icon viewBox widths that did not match
+  the solid style
+
+---
+
+## [5.10.2](https://github.com/FortAwesome/Font-Awesome/releases/tag/5.10.2) - 2019-08-22
+
+### Added
+* SVG with JS API function layers() now accepts params to add additional classes
+
+### Changed
+* Lots of updates to various duotone icons
+* Updated the keybase brand icon
+
+### Fixed
+* Duotone icon updates FortAwesome/Font-Awesome#15396
+  FortAwesome/Font-Awesome#15409 FortAwesome/Font-Awesome#15413
+  FortAwesome/Font-Awesome#15325 FortAwesome/Font-Awesome#15334
+  FortAwesome/Font-Awesome#15339 FortAwesome/Font-Awesome#15346
+
+---
+
+## [5.10.1](https://github.com/FortAwesome/Font-Awesome/releases/tag/5.10.1) - 2019-08-02
+
+### Added
+* README file in the otfs/ directory to help direct folks to documentation for the new Duotone OTF file
+
+### Changed
+* A lot of visual improvements and consistency fixes to many of the new Duotone icons
+* The fa-swap-opacity class now works with parent containers where Duotone icons as children
+
+### Fixed
+* Duotone SCSS files were not being correctly compiled with the Dart-Sass tool
+* Font Awesome logo was not appearing in desktop application in font pickers
+
+---
+
+## [5.10.0](https://github.com/FortAwesome/Font-Awesome/releases/tag/5.10.0) - 2019-07-29
+
+### Added
+* Duotone icons style added with over 1,600 new icons
+* New conflict detection script to help identify conflicting versions of Font Awesome (js/conflict-detection.js)
+* Icons border-center-v and border-center-h
+* New brand icon for cotton-bureau
+
+### Changed
+* Updated version 4 shim to more accurately match sort-alpha-desc, sort-amount-desc, sort-numeric-desc
+
+### Fixed
+* Icon sort-amount-down-alt incorrectly matching sort-amount-down
+* Icon border-outer icon missing inner grid shapes
+
+---
+
+## [5.9.0](https://github.com/FortAwesome/Font-Awesome/releases/tag/5.9.0) - 2019-06-04
+
+**Minor version upgrade notice: there are some backward-incompatible changes to this release. See the
+[UPGRADING.md guide](https://github.com/FortAwesome/Font-Awesome/blob/master/UPGRADING.md) for more
+information.**
+
+### Added
+* An assortment of voted icons, updated icons, and new icons
+* New icons and updates to the text editor category
+* A flipped version of the phone and phone-alt icon
+
+### Changed
+* Removed the nintendo-switch icon by request of Nintendo
+* Sorted out the sort icons FortAwesome/Font-Awesome#9464 FortAwesome/Font-Awesome#9419 FortAwesome/Font-Awesome-Pro#915
+* De-crevassed the brain icons
+
+### Fixed
+* Proportions corrected on facebook-messenger brand icon
+
+---
+
+## [5.8.2](https://github.com/FortAwesome/Font-Awesome/releases/tag/5.8.2) - 2019-05-07
+
+### Added
+* New brand icon stackpath
+
+### Changed
+* Updated redhat, mailchimp brand icons
+* Updated Facebook brand icons in accordance with https://facebookbrand.com (facebook, facebook-f, facebook-square)
+* Updated Git brand icons (git, git-square, git-alt)
+* Removing the "at" character to prevent overlap with the at icon
+
+### Fixed
+* Missing version for the route icon FortAwesome/Font-Awesome#13804
+* Corrected the orientation of radiation and radiation-alt icons
+* Alignment fixed for check-double
+* Moved the notch into the correct location for sim-card
+* Allow the role attribute to be specified FortAwesome/Font-Awesome#14791
+* Prevent IE11 CSS selector error from crashing SVG with JS execution
+
+---
 
 ## [5.8.1](https://github.com/FortAwesome/Font-Awesome/releases/tag/5.8.1) - 2019-03-21
 

@@ -15,21 +15,21 @@ class APIController: AppSettings, URLSessionDelegate {
         
         _ = self.HTTPGetJSON("\(API.defaultAPIUrl)\(Sensor.urlsLive[type]!)") { (data, response, error) in
             if error == nil && (response as? HTTPURLResponse)?.statusCode == 200 && data != nil {
-                var SensorData:[Sensor.Types:String] = [:]
+                var sensorData:[Sensor.Types:String] = [:]
                 var timestamp:String?
                 if let temp = data?["temperature"] as? String {
-                    SensorData[.temperature] = temp
+                    sensorData[.temperature] = temp
                 }
                 if let humidity = data?["humidity"] as? String {
-                    SensorData[.humidity] = humidity
+                    sensorData[.humidity] = humidity
                 }
                 if let pressure = data?["pressure"] as? String {
-                    SensorData[.pressure] = pressure
+                    sensorData[.pressure] = pressure
                 }
                 if let time = data?["time"] as? String {
                     timestamp = time
                 }
-                completion(SensorData, timestamp, nil)
+                completion(sensorData, timestamp, nil)
             } else {
                 completion(nil, nil, (error != nil ? error : nil))
             }

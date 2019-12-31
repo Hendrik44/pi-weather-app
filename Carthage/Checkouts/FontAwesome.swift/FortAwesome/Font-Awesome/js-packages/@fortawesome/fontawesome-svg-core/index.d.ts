@@ -1,5 +1,5 @@
-import {IconDefinition, IconLookup, IconName, IconPrefix, IconPack } from '@fortawesome/fontawesome-common-types';
-export {IconDefinition, IconLookup, IconName, IconPrefix, IconPack } from '@fortawesome/fontawesome-common-types';
+import {IconDefinition, IconLookup, IconName, IconPrefix, IconPathData, IconPack } from '@fortawesome/fontawesome-common-types';
+export {IconDefinition, IconLookup, IconName, IconPrefix, IconPathData, IconPack } from '@fortawesome/fontawesome-common-types';
 export const dom: DOM;
 export const library: Library;
 export const parse: { transform(transformString: string): Transform };
@@ -13,7 +13,8 @@ export function toHtml(abstractNodes: AbstractElement): string;
 export function layer(
   assembler: (
     addLayerCallback: (layerToAdd: IconOrText | IconOrText[]) => void
-  ) => void
+  ) => void,
+  params?: LayerParams
 ): Layer;
 export function icon(icon: IconName | IconLookup, params?: IconParams): Icon;
 export type IconProp = IconName | [IconPrefix, IconName] | IconLookup;
@@ -91,6 +92,9 @@ export interface Params {
   styles?: Styles;
 }
 export interface CounterParams extends Params {
+}
+export interface LayerParams {
+  classes?: string | string[];
 }
 export interface TextParams extends Params {
   transform?: Transform;

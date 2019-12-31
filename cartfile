@@ -1,7 +1,7 @@
-# https://github.com/danielgindi/Charts
-github "danielgindi/Charts" == 3.2.2
+# https://github.com/danielgindi/Chartshttps://github.com/thii/FontAwesome.swift
+github "danielgindi/Charts" == 3.4.0
 
 github "Hendrik44/KVNProgress" "master"
 
-# https://github.com/thii/FontAwesome.swift
-github "thii/FontAwesome.swift" == 1.7.0
+# 
+github "thii/FontAwesome.swift" == 1.8.3

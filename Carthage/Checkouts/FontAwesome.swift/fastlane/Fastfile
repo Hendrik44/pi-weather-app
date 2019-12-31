@@ -1,7 +1,7 @@
 desc "Runs all the tests"
 lane :test do
   Dir.chdir("..") do
-    sh("xcodebuild test -project FontAwesome.xcodeproj -scheme FontAwesome -destination 'platform=iOS Simulator,name=iPhone XS' | xcbeautify")
+    sh("xcodebuild test -project FontAwesome.xcodeproj -scheme FontAwesome -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max' | xcbeautify")
     sh("xcodebuild -project FontAwesome.xcodeproj -scheme FontAwesome-watchOS -destination 'OS=5.1,name=Apple Watch Series 4 - 44mm' | xcbeautify")
   end
 end
@@ -26,7 +26,9 @@ lane :release do |options|
   ensure_git_status_clean
 
   test
-  pod_lib_lint
+  pod_lib_lint(
+    allow_warnings: true,
+  )
 
   increment_version_number(version_number: target_version)
   version_bump_podspec(path: "FontAwesome.swift.podspec", version_number: target_version)
@@ -35,5 +37,8 @@ lane :release do |options|
   add_git_tag(tag: target_version, message: target_version)
   push_to_git_remote
 
-  pod_push(use_bundle_exec: true)
+  pod_push(
+    allow_warnings: true,
+    use_bundle_exec: true,
+  )
 end

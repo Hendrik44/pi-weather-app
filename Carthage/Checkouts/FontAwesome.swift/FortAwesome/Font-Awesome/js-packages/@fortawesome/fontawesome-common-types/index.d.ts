@@ -1,4 +1,5 @@
-export type IconPrefix = "fas" | "fab" | "far" | "fal";
+export type IconPrefix = "fas" | "fab" | "far" | "fal" | "fad";
+export type IconPathData = string | string[]
 
 export interface IconLookup {
   prefix: IconPrefix;
@@ -12,7 +13,7 @@ export interface IconDefinition extends IconLookup {
     number, // height
     string[], // ligatures
     string, // unicode
-    string // svgPathData
+    IconPathData // svgPathData
   ];
 }
 
@@ -69,6 +70,7 @@ export type IconName = '500px' |
   'btc' | 
   'buffer' | 
   'buromobelexperte' | 
+  'buy-n-large' | 
   'buysellads' | 
   'canadian-maple-leaf' | 
   'cc-amazon-pay' | 
@@ -93,6 +95,7 @@ export type IconName = '500px' |
   'confluence' | 
   'connectdevelop' | 
   'contao' | 
+  'cotton-bureau' | 
   'cpanel' | 
   'creative-commons' | 
   'creative-commons-by' | 
@@ -156,6 +159,7 @@ export type IconName = '500px' |
   'fedora' | 
   'figma' | 
   'firefox' | 
+  'firefox-browser' | 
   'first-order' | 
   'first-order-alt' | 
   'firstdraft' | 
@@ -181,6 +185,7 @@ export type IconName = '500px' |
   'gg' | 
   'gg-circle' | 
   'git' | 
+  'git-alt' | 
   'git-square' | 
   'github' | 
   'github-alt' | 
@@ -216,6 +221,7 @@ export type IconName = '500px' |
   'houzz' | 
   'html5' | 
   'hubspot' | 
+  'ideal' | 
   'imdb' | 
   'instagram' | 
   'intercom' | 
@@ -257,6 +263,7 @@ export type IconName = '500px' |
   'markdown' | 
   'mastodon' | 
   'maxcdn' | 
+  'mdb' | 
   'medapps' | 
   'medium' | 
   'medium-m' | 
@@ -264,6 +271,7 @@ export type IconName = '500px' |
   'meetup' | 
   'megaport' | 
   'mendeley' | 
+  'microblog' | 
   'microsoft' | 
   'mix' | 
   'mixcloud' | 
@@ -273,7 +281,6 @@ export type IconName = '500px' |
   'napster' | 
   'neos' | 
   'nimblr' | 
-  'nintendo-switch' | 
   'node' | 
   'node-js' | 
   'npm' | 
@@ -286,6 +293,7 @@ export type IconName = '500px' |
   'openid' | 
   'opera' | 
   'optin-monster' | 
+  'orcid' | 
   'osi' | 
   'page4' | 
   'pagelines' | 
@@ -302,6 +310,7 @@ export type IconName = '500px' |
   'pied-piper-alt' | 
   'pied-piper-hat' | 
   'pied-piper-pp' | 
+  'pied-piper-square' | 
   'pinterest' | 
   'pinterest-p' | 
   'pinterest-square' | 
@@ -362,6 +371,7 @@ export type IconName = '500px' |
   'squarespace' | 
   'stack-exchange' | 
   'stack-overflow' | 
+  'stackpath' | 
   'staylinked' | 
   'steam' | 
   'steam-square' | 
@@ -376,6 +386,7 @@ export type IconName = '500px' |
   'superpowers' | 
   'supple' | 
   'suse' | 
+  'swift' | 
   'symfony' | 
   'teamspeak' | 
   'telegram' | 
@@ -397,7 +408,9 @@ export type IconName = '500px' |
   'uber' | 
   'ubuntu' | 
   'uikit' | 
+  'umbraco' | 
   'uniregistry' | 
+  'unity' | 
   'untappd' | 
   'ups' | 
   'usb' | 
@@ -652,7 +665,10 @@ export type IconName = '500px' |
   'backspace' | 
   'backward' | 
   'bacon' | 
+  'bahai' | 
   'balance-scale' | 
+  'balance-scale-left' | 
+  'balance-scale-right' | 
   'ban' | 
   'band-aid' | 
   'barcode' | 
@@ -672,6 +688,7 @@ export type IconName = '500px' |
   'bezier-curve' | 
   'bible' | 
   'bicycle' | 
+  'biking' | 
   'binoculars' | 
   'biohazard' | 
   'birthday-cake' | 
@@ -690,6 +707,9 @@ export type IconName = '500px' |
   'book-open' | 
   'book-reader' | 
   'bookmark' | 
+  'border-all' | 
+  'border-none' | 
+  'border-style' | 
   'bowling-ball' | 
   'box' | 
   'box-open' | 
@@ -730,6 +750,7 @@ export type IconName = '500px' |
   'car-battery' | 
   'car-crash' | 
   'car-side' | 
+  'caravan' | 
   'caret-down' | 
   'caret-left' | 
   'caret-right' | 
@@ -814,6 +835,7 @@ export type IconName = '500px' |
   'compact-disc' | 
   'compass' | 
   'compress' | 
+  'compress-alt' | 
   'compress-arrows-alt' | 
   'concierge-bell' | 
   'cookie' | 
@@ -890,12 +912,14 @@ export type IconName = '500px' |
   'exclamation-circle' | 
   'exclamation-triangle' | 
   'expand' | 
+  'expand-alt' | 
   'expand-arrows-alt' | 
   'external-link-alt' | 
   'external-link-square-alt' | 
   'eye' | 
   'eye-dropper' | 
   'eye-slash' | 
+  'fan' | 
   'fast-backward' | 
   'fast-forward' | 
   'fax' | 
@@ -1022,8 +1046,9 @@ export type IconName = '500px' |
   'hanukiah' | 
   'hard-hat' | 
   'hashtag' | 
+  'hat-cowboy' | 
+  'hat-cowboy-side' | 
   'hat-wizard' | 
-  'haykal' | 
   'hdd' | 
   'heading' | 
   'headphones' | 
@@ -1057,6 +1082,7 @@ export type IconName = '500px' |
   'i-cursor' | 
   'ice-cream' | 
   'icicles' | 
+  'icons' | 
   'id-badge' | 
   'id-card' | 
   'id-card-alt' | 
@@ -1165,6 +1191,7 @@ export type IconName = '500px' |
   'mosque' | 
   'motorcycle' | 
   'mountain' | 
+  'mouse' | 
   'mouse-pointer' | 
   'mug-hot' | 
   'music' | 
@@ -1209,9 +1236,12 @@ export type IconName = '500px' |
   'percentage' | 
   'person-booth' | 
   'phone' | 
+  'phone-alt' | 
   'phone-slash' | 
   'phone-square' | 
+  'phone-square-alt' | 
   'phone-volume' | 
+  'photo-video' | 
   'piggy-bank' | 
   'pills' | 
   'pizza-slice' | 
@@ -1255,10 +1285,12 @@ export type IconName = '500px' |
   'rainbow' | 
   'random' | 
   'receipt' | 
+  'record-vinyl' | 
   'recycle' | 
   'redo' | 
   'redo-alt' | 
   'registered' | 
+  'remove-format' | 
   'reply' | 
   'reply-all' | 
   'republican' | 
@@ -1341,15 +1373,22 @@ export type IconName = '500px' |
   'solar-panel' | 
   'sort' | 
   'sort-alpha-down' | 
+  'sort-alpha-down-alt' | 
   'sort-alpha-up' | 
+  'sort-alpha-up-alt' | 
   'sort-amount-down' | 
+  'sort-amount-down-alt' | 
   'sort-amount-up' | 
+  'sort-amount-up-alt' | 
   'sort-down' | 
   'sort-numeric-down' | 
+  'sort-numeric-down-alt' | 
   'sort-numeric-up' | 
+  'sort-numeric-up-alt' | 
   'sort-up' | 
   'spa' | 
   'space-shuttle' | 
+  'spell-check' | 
   'spider' | 
   'spinner' | 
   'splotch' | 
@@ -1441,6 +1480,7 @@ export type IconName = '500px' |
   'tractor' | 
   'trademark' | 
   'traffic-light' | 
+  'trailer' | 
   'train' | 
   'tram' | 
   'transgender' | 
@@ -1507,6 +1547,7 @@ export type IconName = '500px' |
   'video' | 
   'video-slash' | 
   'vihara' | 
+  'voicemail' | 
   'volleyball-ball' | 
   'volume-down' | 
   'volume-mute' | 

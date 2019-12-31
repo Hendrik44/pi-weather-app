@@ -136,8 +136,8 @@ public extension String {
     /// - parameter name: The preferred icon name.
     /// - returns: A string that will appear as icon with FontAwesome.
     static func fontAwesomeIcon(name: FontAwesome) -> String {
-        let toIndex = name.rawValue.index(name.rawValue.startIndex, offsetBy: 1)
-        return String(name.rawValue[name.rawValue.startIndex..<toIndex])
+        let toIndex = name.unicode.index(name.unicode.startIndex, offsetBy: 1)
+        return String(name.unicode[name.unicode.startIndex..<toIndex])
     }
 
     /// Get a FontAwesome icon string with the given CSS icon code. Icon code can be found here: http://fontawesome.io/icons/
@@ -145,7 +145,6 @@ public extension String {
     /// - parameter code: The preferred icon name.
     /// - returns: A string that will appear as icon with FontAwesome.
     static func fontAwesomeIcon(code: String) -> String? {
-
         guard let name = self.fontAwesome(code: code) else {
             return nil
         }
@@ -158,8 +157,7 @@ public extension String {
     /// - parameter code: The preferred icon name.
     /// - returns: An internal corresponding FontAwesome code.
     static func fontAwesome(code: String) -> FontAwesome? {
-        guard let raw = FontAwesomeIcons[code] else { return nil }
-        return FontAwesome(rawValue: raw)
+        return FontAwesome(rawValue: code)
     }
 }
 
@@ -224,14 +222,11 @@ public extension UIImage {
 private class FontLoader {
     class func loadFont(_ name: String) {
         guard
-            let fontURL = URL.fontURL(for: name),
-            let data = try? Data(contentsOf: fontURL),
-            let provider = CGDataProvider(data: data as CFData),
-            let font = CGFont(provider)
+            let fontURL = URL.fontURL(for: name) as CFURL?
             else { return }
 
         var error: Unmanaged<CFError>?
-        if !CTFontManagerRegisterGraphicsFont(font, &error) {
+        if !CTFontManagerRegisterFontsForURL(fontURL, .process, &error) {
             let errorDescription: CFString = CFErrorCopyDescription(error!.takeUnretainedValue())
             guard let nsError = error?.takeUnretainedValue() as AnyObject as? NSError else { return }
             NSException(name: NSExceptionName.internalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
