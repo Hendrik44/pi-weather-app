@@ -709,7 +709,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
 		};
 		4D48638F1E9D833400D0E5DF /* Linting */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -765,7 +765,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/Resources/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/Resources/fabric.buildsecret\"\n\nif test -f \"$FABRIC_APIKEY_FILE\" -a -f \"$FABRIC_BUILDSECRET_FILE\"; then\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\n\necho \"Uploading dSYM files to Crashlytics\"\n\"${SRCROOT}/Fabric.framework/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"\nfi";
+			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/Resources/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/Resources/fabric.buildsecret\"\n\nif test -f \"$FABRIC_APIKEY_FILE\" -a -f \"$FABRIC_BUILDSECRET_FILE\"; then\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\n\necho \"Uploading dSYM files to Crashlytics\"\n\"${SRCROOT}/Fabric.framework/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"\nfi\n";
 		};
 		B1B63FB41E8C76C1000D2072 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
