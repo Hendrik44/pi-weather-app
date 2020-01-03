@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
-    <device id="appleTV" orientation="landscape">
-        <adaptation id="light"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="15702" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="appleTV" appearance="light"/>
     <dependencies>
         <deployment identifier="tvOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
-        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,42 +20,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCx-CY-NlM" customClass="CircleView" customModule="Pi_WeatherTv" customModuleProvider="target">
-                                <rect key="frame" x="68" y="313" width="454" height="454"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fl2-cZ-0al" customClass="CircleView" customModule="Pi_WeatherTv" customModuleProvider="target">
-                                <rect key="frame" x="732" y="313" width="454" height="454"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Fl2-cZ-0al" secondAttribute="height" multiplier="1:1" id="oLj-BQ-7mx"/>
-                                </constraints>
+                                <rect key="frame" x="154" y="384" width="323" height="323"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GdZ-DF-cJt" customClass="CircleView" customModule="Pi_WeatherTv" customModuleProvider="target">
-                                <rect key="frame" x="1398" y="313" width="454" height="454"/>
+                                <rect key="frame" x="1437" y="384" width="329" height="323"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="GdZ-DF-cJt" secondAttribute="height" multiplier="1:1" id="OUu-47-cMe"/>
+                                    <constraint firstAttribute="width" secondItem="GdZ-DF-cJt" secondAttribute="height" multiplier="1:1" constant="6" id="OUu-47-cMe"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messwerte werden geladen..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbq-dE-QDj">
-                                <rect key="frame" x="68" y="962" width="1784" height="50"/>
+                                <rect key="frame" x="154" y="902" width="1612" height="50"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fl2-cZ-0al" customClass="CircleView" customModule="Pi_WeatherTv" customModuleProvider="target">
+                                <rect key="frame" x="796" y="384" width="328" height="323"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Fl2-cZ-0al" secondAttribute="height" multiplier="1:1" constant="5" id="oLj-BQ-7mx"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GdZ-DF-cJt" firstAttribute="height" secondItem="YCx-CY-NlM" secondAttribute="height" id="6Ar-hj-EJ1"/>
                             <constraint firstItem="jbq-dE-QDj" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="48" id="8B9-Ro-TTz"/>
-                            <constraint firstItem="GdZ-DF-cJt" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="313" id="AWv-qC-teK"/>
+                            <constraint firstItem="GdZ-DF-cJt" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="227" id="AWv-qC-teK"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="YCx-CY-NlM" secondAttribute="bottom" constant="313" id="AZ6-xk-7uc"/>
-                            <constraint firstItem="GdZ-DF-cJt" firstAttribute="width" secondItem="YCx-CY-NlM" secondAttribute="width" id="KSi-1c-lp6"/>
-                            <constraint firstItem="Fl2-cZ-0al" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="313" id="LcO-VJ-CAO"/>
+                            <constraint firstItem="GdZ-DF-cJt" firstAttribute="width" secondItem="YCx-CY-NlM" secondAttribute="width" constant="6" id="KSi-1c-lp6"/>
+                            <constraint firstItem="Fl2-cZ-0al" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="227" id="LcO-VJ-CAO"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Fl2-cZ-0al" secondAttribute="bottom" constant="313" id="NjB-dk-Kfw"/>
-                            <constraint firstItem="Fl2-cZ-0al" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="732" id="Sk5-cj-PKj"/>
+                            <constraint firstItem="Fl2-cZ-0al" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="796" id="Sk5-cj-PKj"/>
                             <constraint firstItem="Fl2-cZ-0al" firstAttribute="height" secondItem="YCx-CY-NlM" secondAttribute="height" id="UEk-VI-3bj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GdZ-DF-cJt" secondAttribute="trailing" constant="48" id="UIL-zd-5Yz"/>
                             <constraint firstAttribute="trailingMargin" secondItem="jbq-dE-QDj" secondAttribute="trailing" constant="48" id="dOx-zS-TjF"/>
-                            <constraint firstItem="YCx-CY-NlM" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="313" id="dmc-C1-ZLN"/>
-                            <constraint firstItem="Fl2-cZ-0al" firstAttribute="width" secondItem="YCx-CY-NlM" secondAttribute="width" id="kY5-SS-WBD"/>
+                            <constraint firstItem="YCx-CY-NlM" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="227" id="dmc-C1-ZLN"/>
+                            <constraint firstItem="Fl2-cZ-0al" firstAttribute="width" secondItem="YCx-CY-NlM" secondAttribute="width" constant="5" id="kY5-SS-WBD"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="GdZ-DF-cJt" secondAttribute="bottom" constant="313" id="kjV-az-hzv"/>
                             <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="jbq-dE-QDj" secondAttribute="bottom" constant="68" id="tR9-oE-GoG"/>
                             <constraint firstItem="YCx-CY-NlM" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="48" id="wE6-E5-wZ6"/>
@@ -90,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="u2c-NF-Y8i">
-                                <rect key="frame" x="20" y="150" width="1880" height="70"/>
+                                <rect key="frame" x="106" y="177" width="1708" height="70"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.10000000000000001" colorSpace="calibratedWhite"/>
                                 <segments>
                                     <segment title="Temperatur"/>
@@ -102,26 +98,16 @@
                                 </connections>
                             </segmentedControl>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Daa-Hr-Tbm" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="20" y="227" width="1880" height="833"/>
+                                <rect key="frame" x="106" y="254" width="1708" height="746"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verlaufswerte" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5r-Jk-ko8">
-                                <rect key="frame" x="20" y="8" width="1880" height="134"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="u2c-NF-Y8i" firstAttribute="top" secondItem="A5r-Jk-ko8" secondAttribute="bottom" constant="8" id="IgK-Lt-Abu"/>
                             <constraint firstItem="Daa-Hr-Tbm" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="MBb-Uk-Fkl"/>
-                            <constraint firstItem="u2c-NF-Y8i" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="150" id="Myb-3T-8MU"/>
+                            <constraint firstItem="u2c-NF-Y8i" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="20" id="Myb-3T-8MU"/>
                             <constraint firstItem="u2c-NF-Y8i" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="OMm-il-0fD"/>
-                            <constraint firstItem="A5r-Jk-ko8" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" id="aNp-i9-aX6"/>
                             <constraint firstItem="Daa-Hr-Tbm" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="ddN-iP-jfe"/>
-                            <constraint firstAttribute="trailing" secondItem="A5r-Jk-ko8" secondAttribute="trailing" constant="20" id="f1p-Fk-TDC"/>
-                            <constraint firstItem="A5r-Jk-ko8" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" constant="20" id="fFj-yL-zPZ"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Daa-Hr-Tbm" secondAttribute="bottom" constant="20" id="iKb-Kl-iwo"/>
                             <constraint firstItem="Daa-Hr-Tbm" firstAttribute="top" secondItem="u2c-NF-Y8i" secondAttribute="bottom" constant="8" id="lBi-gd-QdS"/>
                             <constraint firstItem="u2c-NF-Y8i" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="yD8-vq-pce"/>
@@ -180,7 +166,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="66" sectionFooterHeight="66" translatesAutoresizingMaskIntoConstraints="NO" id="UBW-hB-K9N">
-                                <rect key="frame" x="476" y="175" width="968" height="864"/>
+                                <rect key="frame" x="476" y="332" width="968" height="647"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="968" id="8A6-zZ-Ss8"/>
@@ -190,18 +176,18 @@
                                         <rect key="frame" x="0.0" y="66" width="968" height="66"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BeT-kG-eJc" id="cDc-t1-hM1">
-                                            <rect key="frame" x="0.0" y="0.0" width="952" height="66"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="968" height="66"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Mod-la-kOX">
-                                                    <rect key="frame" x="20" y="10" width="72" height="46"/>
+                                                    <rect key="frame" x="20" y="10" width="71" height="46"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Zh5-WD-7r3">
-                                                    <rect key="frame" x="836" y="10" width="96" height="46"/>
+                                                    <rect key="frame" x="854" y="10" width="94" height="46"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                                     <nil key="textColor"/>
