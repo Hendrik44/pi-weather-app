@@ -61,12 +61,6 @@
 		B104D3BF1E952E630025BA9B /* FontAwesome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B104D3BE1E952E630025BA9B /* FontAwesome.framework */; };
 		B11D647D1DB95B93003C9F7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DF394E31DA9BB7400819632 /* Assets.xcassets */; };
 		B11D64861DB97868003C9F7C /* LiveDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D981D071D942FFB00C38ECF /* LiveDataViewController.swift */; };
-		B12FF8AB204892E7003F9661 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8A9204892E7003F9661 /* Crashlytics.framework */; };
-		B12FF8AC204892E7003F9661 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8A9204892E7003F9661 /* Crashlytics.framework */; };
-		B12FF8AE204892E7003F9661 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8A9204892E7003F9661 /* Crashlytics.framework */; };
-		B12FF8AF204892E7003F9661 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8AA204892E7003F9661 /* Fabric.framework */; };
-		B12FF8B0204892E7003F9661 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8AA204892E7003F9661 /* Fabric.framework */; };
-		B12FF8B2204892E7003F9661 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B12FF8AA204892E7003F9661 /* Fabric.framework */; };
 		B148769D1D9337E300A05531 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B148769C1D9337E300A05531 /* AppDelegate.swift */; };
 		B16357A21E8C7243002751F4 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DF394F71DA9BBFF00819632 /* NotificationCenter.framework */; };
 		B17738531E8D910100EC05BD /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B17738521E8D910100EC05BD /* Charts.framework */; };
@@ -210,8 +204,6 @@
 		4DF4B72D1E945AA600996AF2 /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/tvOS/FontAwesome.framework; sourceTree = SOURCE_ROOT; };
 		B104D3BE1E952E630025BA9B /* FontAwesome.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FontAwesome.framework; path = Carthage/Build/watchOS/FontAwesome.framework; sourceTree = SOURCE_ROOT; };
 		B11D647F1DB9631F003C9F7C /* Pi-Weather.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pi-Weather.entitlements"; sourceTree = "<group>"; };
-		B12FF8A9204892E7003F9661 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		B12FF8AA204892E7003F9661 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		B14876991D9337E300A05531 /* Pi-Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pi-Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B148769C1D9337E300A05531 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B14876A31D9337E300A05531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -235,9 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B177385A1E8D9B6E00EC05BD /* Charts.framework in Frameworks */,
-				B12FF8AC204892E7003F9661 /* Crashlytics.framework in Frameworks */,
 				4DF4B72E1E945AA600996AF2 /* FontAwesome.framework in Frameworks */,
-				B12FF8B0204892E7003F9661 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,9 +235,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B12FF8AE204892E7003F9661 /* Crashlytics.framework in Frameworks */,
 				4DED4D5F1E86B36D00929BBA /* NotificationCenter.framework in Frameworks */,
-				B12FF8B2204892E7003F9661 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,11 +252,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B17738531E8D910100EC05BD /* Charts.framework in Frameworks */,
-				B12FF8AB204892E7003F9661 /* Crashlytics.framework in Frameworks */,
 				B17738571E8D915F00EC05BD /* FontAwesome.framework in Frameworks */,
 				B1C6A7E21E8EE0D0003BCBAD /* KVNProgressKit.framework in Frameworks */,
 				B16357A21E8C7243002751F4 /* NotificationCenter.framework in Frameworks */,
-				B12FF8AF204892E7003F9661 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,8 +387,6 @@
 		4DF394F61DA9BBFF00819632 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B12FF8A9204892E7003F9661 /* Crashlytics.framework */,
-				B12FF8AA204892E7003F9661 /* Fabric.framework */,
 				4D4863961E9D8F9400D0E5DF /* WebKit.framework */,
 				4DF394F71DA9BBFF00819632 /* NotificationCenter.framework */,
 			);
@@ -553,7 +537,6 @@
 				4DF394F01DA9BB7400819632 /* Embed Watch Content */,
 				4DF395061DA9BBFF00819632 /* Embed App Extensions */,
 				B17738551E8D910100EC05BD /* Embed Frameworks */,
-				B12FF8A820488F51003F9661 /* Fabric */,
 			);
 			buildRules = (
 			);
@@ -752,20 +735,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-		B12FF8A820488F51003F9661 /* Fabric */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Fabric;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/Resources/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/Resources/fabric.buildsecret\"\n\nif test -f \"$FABRIC_APIKEY_FILE\" -a -f \"$FABRIC_BUILDSECRET_FILE\"; then\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\n\necho \"Uploading dSYM files to Crashlytics\"\n\"${SRCROOT}/Fabric.framework/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"\nfi\n";
 		};
 		B1B63FB41E8C76C1000D2072 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
